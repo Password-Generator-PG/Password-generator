@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Support</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'/>
+    <link rel="stylesheet" href="./Mobile/support-style.css"/>
+    <link rel="icon" href="logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="#1b1a2a"/>
+
+        <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBQ6JK9');</script>
+    <!-- End Google Tag Manager -->
+
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBQ6JK9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="topnav">
+    <a href="index-mobile.html" class="active2">Home</a>
+    <div id="myLinks">
+      <a href="advanced-mobile.html">Advanced</a>
+      <a href="about-mobile.html">About</a>
+      <!--<a href="#about">Blog</a> -->
+      <a href="donation-mobile.html">Donate</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+    }
+    </script>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+      <h2>Support form</h2>
+      <form name="support" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
+            <input id="tile" type="text" name="title" placeholder="Your Title...">
+    <input id="email" type="email" name="email" placeholder="Your Email...">
+    <textarea id="message" type="text" name="message" rows="8" cols="80" placeholder="Your message..."></textarea>
+    <div data-netlify-recaptcha="true" ></div>
+    <button id="submit" type="submit"><span>Send</span></button>
+    </form>
+    </div>
+  </body>
+</html>

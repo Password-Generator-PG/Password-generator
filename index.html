@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Password Generator</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'/>
+  <link rel="stylesheet" href="./style2.css"/>
+  <link rel="icon" href="logo.png"/>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#1b1a2a"/>
+  <!-- Primary Meta Tags -->
+<meta name="title" content="Password Generator">
+<meta name="description" content="A next-gen password generator with an download button for your passwords. Made by K+ for you. Minimalistic Ui and fast loading. ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://k-plus-password-generator.netlify.app/">
+<meta property="og:title" content="Password Generator">
+<meta property="og:description" content="A next-gen password generator with an download button for your passwords. Made by K+ for you. Minimalistic Ui and fast loading. ">
+<meta property="og:image" content="https://k-plus-password-generator.netlify.app/logo.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://k-plus-password-generator.netlify.app/">
+<meta property="twitter:title" content="Password Generator">
+<meta property="twitter:description" content="A next-gen password generator with an download button for your passwords. Made by K+ for you. Minimalistic Ui and fast loading. ">
+<meta property="twitter:image" content="https://k-plus-password-generator.netlify.app/logo.png">
+<!-- end -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script type="module" src="firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore-compat.js"></script>
+      <script type="text/javascript"><!--
+
+      if (screen.width < 550) {
+
+      window.location.href = "index-mobile.html";
+      }
+      //-->
+
+      </script>
+      <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MBQ6JK9');</script>
+<!-- End Google Tag Manager -->
+
+
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBQ6JK9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<ul id="top">
+  <li><a class="active" href="#nothing">Password Generator</a></li>
+  <li><a href="advanced.html">Advanced</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="support.html">Support</a></li>
+  <li style="float:right"><a href="donation.html">Donate</a></li>
+</ul>
+
+<!-- partial:index.partial.html -->
+<div class="float1">
+
+<div class="container0">
+  <h1>Welcome!</h1>
+</div>
+<div class="container">
+	<div class="result-container">
+		<span id="result"></span>
+		<button class="btn" id="clipboard">
+			<i class="far fa-clipboard"></i>
+		</button>
+	</div>
+	<div class="settings">
+		<div class="setting">
+			<label></label>
+			<input type="number" id="length" min='4' max='20' value='20' />
+		</div>
+		<div class="setting">
+			<label></label>
+			<input type="checkbox" id="uppercase" checked />
+		</div>
+		<div class="setting">
+			<label></label>
+			<input type="checkbox" id="lowercase" checked />
+		</div>
+		<div class="setting">
+			<label></label>
+			<input type="checkbox" id="numbers" checked />
+		</div>
+		<div class="setting">
+			<label></label>
+			<input type="checkbox" id="symbols" checked />
+		</div>
+	</div>
+	<button class="btn-btn-large" id="generate">
+		<span>Generate password</span>
+	</button>
+  <button id="btn-dow" id="download">
+    <a href="#download">
+    <img src="downl.png" alt="Download" width="30px" class="img3">
+    </a>
+  </button>
+
+</div>
+
+
+</div>
+
+<div id="command">
+  <input type="text" autofocus id="command-inp" value="">
+  <p id="gax"></p>
+  <button type="button" id="bnt001917" onclick="comclick()"></button>
+</div>
+
+
+
+<div id="alert">
+<p id="alert2"></p>
+<button type="button" id="okay" onclick="click22()">Okay</button>
+</div>
+<div id="discord">
+<p id="discord2">We have now our own discord server!</p>
+<img src="discord-ico.png" width="100px" alt="Discord icon">
+<p>Get Informated about updates, security news and much more!</p>
+<p> Do you want to join?</p>
+<button type="button" id="okay2" onclick="click24()">Yes!</button>
+<button type="button" id="okay3" onclick="click25()">No, thanks!</button>
+</div>
+<div id="cookiess">
+  <img src="term-ico.svg" width="200px" alt="Terms">
+<p id="big-cookie">Cookies</p>
+<p>This website uses analystic-cookies to watch our website traffic. We are not collecting your passwords or data. You are completely anonymous. Every password you generate will stay local and safe. We dont know how many passwords you generate/download and we will never want to know that! </p>
+<button type="button" id="accept" onclick="click26()">Okay</button>
+</div>
+
+<div class="bottom">
+  <button type="button" id="bottomcc" onclick="bottom1()">Console</button>
+</div>
+<div class="textorhtml" id="textorhtmlid">
+  <h1>Choose an<br>option...</h1>
+  <div class="txtf">
+    <h3>Text file</h3>
+    <div class="icontxt">
+      <h3>.txt</h3>
+    </div>
+    <button type="button" id="dowtxt"><span>Download</span></button>
+  </div>
+  <div class="htmlf">
+    <h3>Html file (beta)</h3>
+    <div class="iconhtml">
+      <h3>.html</h3>
+    </div>
+    <button type="button" id="dowhtml">
+      <span>Download</span>
+    </button>
+  </div>
+</div>
+
+<!-- partial -->
+  <script  src="./script2.js"></script>
+  <script  src="./readme.js"></script>
+</body>
+</html>

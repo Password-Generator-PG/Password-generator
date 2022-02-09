@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PG lite</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style media="screen">
+      * {
+      	box-sizing: border-box;
+      }
+      *:focus {
+      	outline: none;
+      }
+      body {
+    	background-color: #1b1a2a;
+      	color: #fff;
+      	display: flex;
+      	font-family: 'Muli', sans-serif;
+      	flex-direction: column;
+      	align-items: center;
+      	justify-content: center;
+      	padding: 10px;
+      	min-height: 100%;
+      }
+
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+
+      p {
+      	margin: 5px 0;
+      }
+
+      h2 {
+      	margin: 10px 0 20px;
+      	text-align: center;
+      }
+
+      input[type=checkbox] {
+      	margin-right: 0;
+      }
+
+
+      .container {
+      	background-color: rgba(14, 102, 78, 0.7);
+      	margin-top: 10%;
+      	padding: 20px;
+      	width: 400px;
+      	max-width: 100%;
+      	border-radius: 25px;
+      	backdrop-filter: blur(2rem);
+      }
+
+
+
+      .result-container {
+      	background-color: rgba(0, 0, 0, 0.4);
+      	display: flex;
+      	justify-content: flex-start;
+      	align-items: center;
+      	position: relative;
+      	font-size: 18px;
+      	letter-spacing: 1px;
+      	padding: 12px 10px;
+      	height: 50px;
+      	width: 100%;
+      	border-radius: 25px;
+      }
+
+      .result-container #result {
+        	word-wrap: break-word;
+      	max-width: calc(100% - 40px);
+      }
+
+      .result-container .btn {
+      	font-size: 20px;
+      	position: absolute;
+      	top: 5px;
+      	right: 5px;
+      	height: 40px;
+      	width: auto;
+      }
+
+      .btn {
+      	border: none;
+      	color: #fff;
+      	cursor: pointer;
+      	font-size: 16px;
+      	padding: auto;
+      	background-color: #0e664e;
+      	border-radius: 25px;
+      }
+
+      .btn-btn-large{
+      	border: none;
+      	color: #fff;
+      	cursor: pointer;
+      	font-size: 16px;
+      	padding: 8px 12px;
+      	background-color: #083d2f;
+      	border-radius: 25px;
+      }
+      .btn-btn-large{
+      	border: none;
+      	color: #fff;
+      	cursor: pointer;
+      	font-size: 16px;
+      	padding: 8px 12px;
+      	background-color: #083d2f;
+      	border-radius: 25px;
+      	opacity: 1;
+      	text-align: center;
+      	justify-content: center;
+      	align-items: center;
+      	transition: 1s;
+      	margin-left: 10px;
+      }
+
+      .btn-btn-large {
+        border: none;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        background-color: #083d2f;
+        padding: 8px 12px;
+        margin-left: 10px;
+        border-radius: 25px;
+      	z-index: 1;
+      }
+
+
+
+      .btn-btn-large span {
+        position: relative;
+        z-index: 1;
+      }
+
+
+
+      .btn-large {
+      	display: block;
+      	width: 100%;
+      }
+
+      .setting {
+      	display: flex;
+      	justify-content: space-between;
+      	align-items: center;
+      	margin: 15px 0;
+      }
+
+      @media screen and (max-width: 400px) {
+      	.result-container {
+      		font-size: 14px;
+      	}
+      }
+      #length {
+      	background-color: rgba(0, 0, 0, 0.37);
+      	letter-spacing: 1px;
+      	color: #fff;
+      	transition: 1s;
+      	backdrop-filter: blur(2rem);
+      	border-radius: 25px;
+      	padding: 8px;
+      	border: 0;
+      }
+      #btn-dow {
+        border: none;
+      	margin-top: 10px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+      	position: relative;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        background-color: #083d2f;
+        margin-left: 10px;
+        border-radius: 25px;
+      	z-index: 1;
+      	align-items: center;
+      	padding: 8px 12px;
+      	transition: 1s;
+      }
+
+      #btn-dow span {
+        position: relative;
+        z-index: 1;
+      }
+
+
+      #alert {
+      	visibility: hidden;
+      	border: none;
+      	display:block;
+      	cursor: pointer;
+      	text-transform: uppercase;
+      	outline: none;
+      	overflow: hidden;
+      	position: fixed;
+      	color: #fff;
+      	font-weight: 700;
+      	font-size: 15px;
+      	background-color: rgba(14, 102, 78, 0.7);
+      	backdrop-filter: blur(2rem);
+      	border-radius: 15px;
+      	z-index: 1;
+      	align-items: center;
+      	padding: 8px 12px;
+      	width: auto;
+      	height: auto;
+      	left: 0px;
+      	-webkit-tap-highlight-color: transparent;
+      	bottom: 10px;
+      	left:auto;
+      }
+      #alert p {
+      	transition: 0s;
+      }
+      #okay {
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 10px;
+      padding: 8px 12px;
+      background-color: #0e664e;
+      border-radius: 25px;
+      -webkit-tap-highlight-color: transparent;
+      height: 30px;
+      width: auto;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Lite mode</h1>
+    <div class="container">
+    	<div class="result-container">
+    		<span id="result"></span>
+    		<button class="btn" id="clipboard">
+    			<p>Copy</p>
+    		</button>
+    	</div>
+    	<div class="settings">
+    		<div class="setting">
+    			<label>Password length</label>
+    			<input type="number" id="length" min='4' max='20' value='20' />
+    		</div>
+    		<div class="setting">
+    			<label>Include uppercase letters</label>
+    			<input type="checkbox" id="uppercase" checked />
+    		</div>
+    		<div class="setting">
+    			<label>Include lowercase letters</label>
+    			<input type="checkbox" id="lowercase" checked />
+    		</div>
+    		<div class="setting">
+    			<label>Include numbers</label>
+    			<input type="checkbox" id="numbers" checked />
+    		</div>
+    		<div class="setting">
+    			<label>Include symbols</label>
+    			<input type="checkbox" id="symbols" checked />
+    		</div>
+    	</div>
+        <div class="eb">
+    	<button class="btn-btn-large" id="generate">
+    		<span>Generate password</span>
+    	</button>
+      <button id="btn-dow" id="download">
+        <span>Download password</span>
+      </button>
+
+    </div>
+    </div>
+    <div id="alert">
+    <p id="alert2"></p>
+    <button type="button" id="okay" onclick="click22()">Okay</button>
+    </div>
+    <a href="/index.html#removelite">Back to normal version</a>
+      <script  src="./script.js"></script>
+  </body>
+</html>

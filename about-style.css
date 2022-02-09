@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1b1a2a;
+	background-image: url("background1.svg");
+	color: #fff;
+	display: flex;
+	font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	min-height: 100%;
+}
+::-webkit-scrollbar {
+	width: 0px;
+
+}
+h1 {
+	transition: 1s;
+}
+h1:hover {
+	transform: translateY(2px);
+}
+p {
+	margin: 5px 0;
+	transition: 1s;
+}
+p:hover {
+	transform: translateY(2px);
+}
+h2 {
+	margin: 10px 0 20px;
+	text-align: center;
+	transition: 1s;
+}
+h2:hover {
+	transform: translateY(2px);
+}
+
+input[type=checkbox] {
+	margin-right: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.7);
+  position: fixed;
+  top: 0;
+  width: 95%;
+	backdrop-filter: blur(2rem);
+	margin-top: 10px;
+	border-radius: 15px;
+	transition: 1s;
+	z-index: 1;
+}
+
+ul:hover {
+	transform: translateY(1px);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	transition: 1s;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.float1 {
+	align-items: flex;
+	justify-content: flex;
+	height: 100%;
+	width: 100%;
+}
+.container0 {
+	background-color: rgba(14, 102, 78, 0.7);
+	margin-top: 5%;
+	padding: 20px;
+	padding-left: 40px;
+	width: 80%;
+	height: auto;
+	max-width: 100%;
+	border-radius: 25px;
+	float: left;
+	margin-left: 10%;
+	align-items: center;
+	justify-content: center;
+	backdrop-filter: blur(2rem);
+	transition: 1s;
+}
+
+
+.container0:hover {
+	transform: translateY(2px);
+}
+
+
+.credits {
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	display: block;
+	padding-left: 5%;
+}
+.cred2 {
+	display: flex;
+}
+.e1 {
+	background-color: rgba(14, 102, 78, 0.7);
+	margin-top: 10px;
+		margin-left: 10px;
+	padding: 20px;
+	width: 50%;
+	max-width: 100%;
+	border-radius: 25px;
+	height: 300px;
+	backdrop-filter: blur(2rem);
+	transition: 1s;
+
+}
+.e1:hover {
+	transform: translateY(2px);
+}

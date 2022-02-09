@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: k-plus-password-generator.netlify.app
+Token: b095480669ff05a7bfcafa6094f634685bfc82664d0bcaef399e497e8c0322d9

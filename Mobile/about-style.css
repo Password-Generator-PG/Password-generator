@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+*:focus {
+	outline: none;
+}
+body {
+	background-color: #1b1a2a;
+	background-image: url("background1.svg");
+	color: #fff;
+	display: flex;
+	font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	min-height: 100%;
+}
+.topnav {
+	background-color: rgb(31, 28, 75, 0.27);
+backdrop-filter: blur(2rem);
+  overflow: hidden;
+  position: relative;
+  border-radius: 25px;
+	width: 100%;
+
+  margin: 5px;
+transition: 0.5s;
+-webkit-tap-highlight-color: transparent;
+backdrop-filter: blur(2rem);
+}
+
+
+.topnav #myLinks {
+  display: none;
+}
+.active2 {
+  background-color: rgba(0, 0 , 0, 0.27);
+	border-radius: 15px;
+	transition: 1s;
+	height: 50px;
+	text-align: left;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  display: block;
+  font-family: Arial Black;
+	border-radius: 20px;
+	transition: 0.3s;
+}
+.topnav a:focus {
+	background-color: rgba(31, 28, 75, 0.30);
+	border-radius: 100px;
+}
+.topnav a.icon {
+  background: #32E56F;
+  display: block;
+  position: absolute;
+	text-align: center;
+  right: 0;
+  top: 0;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+}
+
+
+
+
+
+p {
+	margin: 5px 0;
+	transition: 1s;
+}
+
+h1 {
+	transition: 1s;
+}
+
+h2 {
+	margin: 10px 0 20px;
+	text-align: center;
+	transition: 1s;
+}
+
+input[type=checkbox] {
+	margin-right: 0;
+}
+
+
+
+.float1 {
+	align-items: flex;
+	justify-content: flex;
+	height: 100%;
+	width: 100%;
+}
+.container0 {
+	background-color: rgb(31, 28, 75, 0.27);
+	margin-top: 5%;
+	padding: 20px;
+	padding-left: 40px;
+	width: 80%;
+	height: auto;
+	max-width: 100%;
+	border-radius: 25px;
+	float: left;
+	margin-left: 10%;
+	align-items: center;
+	justify-content: center;
+	backdrop-filter: blur(2rem);
+	transition: 1s;
+}
+
+
+
+
+.credits {
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	display: block;
+	padding-left: 5%;
+}
+.cred2 {
+	display: block;
+}
+.e1 {
+	background-color: rgb(31, 28, 75, 0.27);
+	margin-top: 10px;
+		margin-left: 10px;
+	padding: 20px;
+	width: 80%;
+	max-width: 100%;
+	border-radius: 25px;
+	height: auto;
+	backdrop-filter: blur(2rem);
+	transition: 1s;
+
+}

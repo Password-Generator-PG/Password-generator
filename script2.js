@@ -342,60 +342,14 @@ function comclick(){
 	if (document.getElementById("command-inp").value == "-pg hideDiscord") {
 		discord.style.visibility = "hidden";
 	};
-	if (document.getElementById("command-inp").value == "-pg A%0FBF$812") {
-		gax.innerHTML = gax.innerHTML + "<br>" + "Bruh";
-		document.body.style.backgroundImage = "url(/floppa.jpg)";
-	};
-	if (document.getElementById("command-inp").value == "-pg A%0FBF$812 --save") {
-		document.body.style.backgroundImage = "url(/A%0FBF$812.jpg)";
-		localStorage.setItem('A%0FBF$812', 'flop');
-	};
-	if (document.getElementById("command-inp").value == "-pg A%0FBF$812 --delete") {
-		document.body.style.backgroundImage = "url(/background1.svg)";
-		localStorage.removeItem('A%0FBF$812');
-	};
-	if (document.getElementById("command-inp").value == "-pg chung812") {
-		gax.innerHTML = gax.innerHTML + "<br>" + "Bruh";
-		document.body.style.backgroundImage = "url(/chung812.png)";
-	};
-	if (document.getElementById("command-inp").value == "-pg chung812 --save") {
-		document.body.style.backgroundImage = "url(/chung812.png)";
-		localStorage.setItem('chung812', 'chungus');
-	};
-	if (document.getElementById("command-inp").value == "-pg chung812 --delete") {
-		document.body.style.backgroundImage = "url(/background1.svg)";
-		localStorage.removeItem('A%0FBF$812');
-	};
-	if (document.getElementById("command-inp").value == "-pg 11/10") {
-		gax.innerHTML = gax.innerHTML + "<br>" + "Bruh";
-		document.body.style.backgroundImage = "url(/11f10.jpg)";
-	};
-	if (document.getElementById("command-inp").value == "-pg 11/10 --save") {
-		document.body.style.backgroundImage = "url(/11f10.jpg)";
-		localStorage.setItem('11f10', '11f10');
-	};
-	if (document.getElementById("command-inp").value == "-pg 11/10 --delete") {
-		document.body.style.backgroundImage = "url(/background1.svg)";
-		localStorage.removeItem('11f10');
-	};
+
 	if (document.getElementById("command-inp").value == "clear") {
 		gax.innerHTML = "";
 	};
 
 	comm.value = "";
-	if (document.getElementById("command-inp").value == "-pg server-status") {
-		var http = require("http");
 
-     http.get({host: "https://k-plus-password-generator.netlify.app"}, function(res){
-    if( res.statusCode == 200 ){
-   gax.innerHTML = "<br>" + "PG:/Server is online and running normal." + gax.innerHTML ;
- }else{
-   gax.innerHTML = "<br>" + "PG:/Server error detected. Site may be down. Error: " +  res.statusCode+ gax.innerHTML ;
- }
-   });
-	};
 
-	comm.value = "";
 };
 if (localStorage.getItem('backgroundProblem') == "yes") {
 			document.body.style.backgroundImage = "url(/background2.jpg)";
@@ -409,15 +363,7 @@ if (localStorage.getItem('lite') == "yes") {
 if (window.location.href.indexOf("#removelite") > -1) {
 localStorage.setItem('lite', 'no');
 }
-if (localStorage.getItem('A%0FBF$812') == "flop") {
-			document.body.style.backgroundImage = "url(/A%0FBF$812.jpg)";
-}
-if (localStorage.getItem('chung812') == "chungus") {
-			document.body.style.backgroundImage = "url(/chung812.png)";
-}
-if (localStorage.getItem('11f10') == "11f10") {
-			document.body.style.backgroundImage = "url(/11f10.jpg)";
-}
+
 //Console
 function bottom1(){
 	if (document.getElementById("command").style.visibility == "visible") {

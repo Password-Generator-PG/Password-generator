@@ -296,7 +296,19 @@
     <p id="alert2"></p>
     <button type="button" id="okay" onclick="click22()">Okay</button>
     </div>
-    <a href="/index.html#removelite">Back to normal version</a>
+    <button type="button" id="backk">Back to normal version</button>
       <script  src="./script.js"></script>
+      <script type="text/javascript">
+        if (window.location.href.indexOf("#mobile") > -1) {
+          localStorage.setItem('liteOnMobile', 'yes');
+        }
+        document.getElementById('backk').onclick{
+        if (localStorage.getItem('liteOnMobile') == "yes") {
+          window.open("https://k-plus-password-generator.netlify.com/index-mobile.html");
+        } else {
+          window.open("https://k-plus-password-generator.netlify.com/");
+        }
+      }
+      </script>
   </body>
 </html>

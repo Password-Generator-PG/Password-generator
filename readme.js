@@ -10,4 +10,4 @@ console.log("%cBug fixes", "color: #05ab6d");
 console.groupEnd("%cNew features:", "color: #32e56f");
 //developer entry
 console.groupCollapsed("%cBeta:", "color: #32e56f");
-console.log("%cSoon", "color: #05ab6d");
+console.log("%cSoon", "color: #05ab6d"); 

@@ -84,9 +84,6 @@ function getRandomSymbol() {
 	const symbols = '!@#$%^&*(){}[]=<>/'
 	return symbols[Math.floor(Math.random() * symbols.length)];
 }
-window.onload = onStart() {
-  document.getElementById('generate').click();
-};
 //download
 function download(filename, text) {
     const element = document.createElement('a');

@@ -362,19 +362,6 @@ function comclick(){
 	};
 
 	comm.value = "";
-	if (document.getElementById("command-inp").value == "-pg server-status") {
-		var http = require("http");
-
-     http.get({host: "https://k-plus-password-generator.netlify.app"}, function(http){
-    if( http.statusCode == 200 ){
-   gax.innerHTML = "<br>" + "PG:/Server is online and running normal." + gax.innerHTML ;
- }else{
-   gax.innerHTML = "<br>" + "PG:/Server error detected. Site may be down. Error: " +  res.statusCode+ gax.innerHTML ;
- }
-   });
-	};
-
-	comm.value = "";
 };
 if (localStorage.getItem('backgroundProblem') == "yes") {
 			document.body.style.backgroundImage = "url(/background2.jpg)";
@@ -388,15 +375,7 @@ if (localStorage.getItem('lite') == "yes") {
 if (window.location.href.indexOf("#removelite") > -1) {
 localStorage.setItem('lite', 'no');
 }
-if (localStorage.getItem('A%0FBF$812') == "flop") {
-			document.body.style.backgroundImage = "url(/A%0FBF$812.jpg)";
-}
-if (localStorage.getItem('chung812') == "chungus") {
-			document.body.style.backgroundImage = "url(/chung812.png)";
-}
-if (localStorage.getItem('11f10') == "11f10") {
-			document.body.style.backgroundImage = "url(/11f10.jpg)";
-}
+
 //cookiess
 const cookies2 = document.getElementById('cookiess');
 if (localStorage.getItem('cookie-terms') == "okay") {

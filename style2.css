@@ -556,7 +556,7 @@ width: auto;
 .textorhtml {
 	border: none;
 	visibility: hidden;
-	display:block;
+	display: block;
 	position: absolute;
 	outline: none;
 	overflow: hidden;
@@ -571,7 +571,7 @@ width: auto;
 	margin: auto;
 	margin-top: 25%;
 z-index: 10;
-	width: 600px;
+	width: auto;
 	height: auto;
 	-webkit-tap-highlight-color: transparent;
 }

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title>Support</title>
+    <title>Contact</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'/>
     <link rel="stylesheet" href="./support-style.css"/>
     <link rel="icon" href="logo.png"/>
@@ -11,11 +11,11 @@
 
         if (screen.width < 550) {
 
-        window.location.href = "support-mobile.html";
+        window.location.href = "contact-mobile.html";
         }
         //-->
         </script>
-        
+
   </head>
   <body>
 
@@ -29,13 +29,13 @@
 
     <div class="float1">
     <div class="container0">
-     <h1>Support</h1>
-     <p>Safe. Fast. Modern. K plus. The password generator!</p>
+     <h1>Contact</h1>
+     <p>Contact our support team if you have questions, problems,...!</p>
     </div>
 
     <div class="container">
-      <h2>Support form</h2>
-      <form name="support" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
+      <h2>Contact form</h2>
+      <form name="contact-form" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" action="./success.html" data-netlify="true">
           <input id="tile" type="text" name="title" placeholder="Your Title...">
     <input id="email" type="email" name="email" placeholder="Your Email...">
     <textarea id="message" type="text" name="message" rows="8" cols="80" placeholder="Your message..."></textarea>

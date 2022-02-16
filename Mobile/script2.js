@@ -205,16 +205,16 @@ comm.addEventListener("keyup", function(event) {
 });
 
 function comclick(){
-	if (document.getElementById("command-inp").value == "-pg test") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg test") {
 		alert("Working!");
 	};
-	if (document.getElementById("command-inp").value == "help") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "help") {
 		gax.innerHTML =  "<br>" + "PG:/Current commands (every command starts with '-pg '):" + "<br>" + "reload (forces the page to reload)" +"<br>" + "reset (resets page completly)" +"<br>" + "test (does a test to see the functionallity of the page)" +"<br>" + "generate (generates a password)" +"<br>" + "copy (copies the password)" +"<br>" + "download (downloads the password)" +"<br>" + "close (closes the command popup)" + "<br>" + "$advanced (loads advanced page)" + "<br>" + "$support (loads support page)" + "<br>" + "$about (loads about page)" + "<br>" + "$donate (loads donation page)" + "<br>" + "remove-background (--save/--delete) (removes background image)" + "<br>" + "link (get current url)" + "<br>" + "background-problem (--save/--delete) (fixes background problems such as lightmode on browsers with forced dark mode)" + "<br>" + "lite (--save) (opens the lite version for people with bad connection or problems)" + "<br>" + "hideCookie (Hides cookie popup without saving)" + "<br>" + "hideDiscord (Hides discord popup without saving)" + gax.innerHTML;
 	};
-	if (document.getElementById("command-inp").value == "-pg help") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg help") {
 		gax.innerHTML = "<br>" + "PG:/Current commands (every command starts with '-pg'):" + "<br>" + "reload (forces the page to reload)" +"<br>" + "reset (resets page completly)" +"<br>" + "test (does a test to see the functionallity of the page)" +"<br>" + "generate (generates a password)" +"<br>" + "copy (copies the password)" +"<br>" + "download (downloads the password)" +"<br>" + "close (closes the command popup)" + "<br>" + "$advanced (loads advanced page)" + "<br>" + "$support (loads support page)" + "<br>" + "$about (loads about page)" + "<br>" + "$donate (loads donation page)" + "<br>" + "remove-background (--save/--delete) (removes background image)" + "<br>" + "link (get current url)" + "<br>" + "background-problem (--save/--delete) (fixes background problems such as lightmode on browsers with forced dark mode)" + "<br>" + "lite (--save) (opens the lite version for people with bad connection or problems)" + "<br>" + "hideCookie (Hides cookie popup without saving)" + "<br>" + "hideDiscord (Hides discord popup without saving)" + "<br>" + "server-status" + gax.innerHTML;
 	};
-	if (document.getElementById("command-inp").value == "-pg reset") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg reset") {
 		gax.innerHTML = "<br>" + "PG:/Resetting..." + gax.innerHTML;
 		localStorage.removeItem('dc');
 		localStorage.removeItem('cookie-terms');
@@ -224,11 +224,11 @@ function comclick(){
 		localStorage.removeItem('chung812');
 		window.location.reload();
 	};
-	if (document.getElementById("command-inp").value == "-pg reload") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg reload") {
 		gax.innerHTML = "<br>" + "PG:/Reloading..." + gax.innerHTML;
 		window.location.reload();
 	};
-	if (document.getElementById("command-inp").value == "-pg generate") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg generate") {
 		const length = +lengthEl.value;
 		const hasLower = lowercaseEl.checked;
 		const hasUpper = uppercaseEl.checked;
@@ -238,7 +238,7 @@ function comclick(){
 		resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 		gax.innerHTML = "<br>" + "PG:/Generated password: " +  resultEl.innerHTML+ gax.innerHTML ;
 	};
-	if (document.getElementById("command-inp").value == "-pg copy") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg copy") {
 		gax.innerHTML = "<br>" + "PG:/Password copied to clipboard." +gax.innerHTML;
 		const textarea = document.createElement('textarea');
 		const password = resultEl.innerText;
@@ -251,78 +251,78 @@ function comclick(){
 		document.execCommand('copy');
 		textarea.remove();
 		alert3.style.visibility = "visible";
-		document.getElementById("alert2").innerHTML = "Password copied to clipboard!";
+		document.getElementById("alert2").innerHTML.toLowerCase() = "Password copied to clipboard!";
 	};
-	if (document.getElementById("command-inp").value == "-pg download") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg download") {
 		gax.innerHTML = "<br>" + "PG:/Download started..."+gax.innerHTML;
 		const text = "Keep it Safe! This file is ONLY on your hard drive and should never leave it! It has this name because its harder to identify for spyware. \n------------------------------------------ \nFor: [the website/app] \nYour password: " + resultEl.innerText + "\n------------------------------------------ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........##.........###.........##....... \n....##########..#########..##########... \n.......####.......#####.......####...... \n.....###..###....##...##....###..###.... \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n------------------------------------------ \nCreated in PG.\nProvided by K+. \nAll rights reserved.";
     const filename = Math.floor(Math.random() * 1000000000) + 1 + "-PG" + ".txt";
 
     download(filename, text);
 	};
-	if (document.getElementById("command-inp").value == "-pg close") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg close") {
 		document.getElementById("command").style.visibility = "hidden";
 				document.getElementById("command-inp").unselect();
 	};
-	if (document.getElementById("command-inp").value == "close") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "close") {
 		document.getElementById("command").style.visibility = "hidden";
 				document.getElementById("command-inp").unselect();
 	};
-	if (document.getElementById("command-inp").value == "-pg $support") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg $support") {
 		window.open("https://k-plus-password-generator.netlify.app/support.html");
 	};
-	if (document.getElementById("command-inp").value == "-pg $about") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg $about") {
 		window.open("https://k-plus-password-generator.netlify.app/about.html");
 	};
-	if (document.getElementById("command-inp").value == "-pg $advanced") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg $advanced") {
 		window.open("https://k-plus-password-generator.netlify.app/advanced.html");
 	};
-	if (document.getElementById("command-inp").value == "-pg $donate") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg $donate") {
 		window.open("https://k-plus-password-generator.netlify.app/donation.html");
 	};
-	if (document.getElementById("command-inp").value == "-pg remove-background") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg remove-background") {
 		document.body.style.background = "#1b1a2a";
 	};
-	if (document.getElementById("command-inp").value == "-pg remove-background --save") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg remove-background --save") {
 		document.body.style.background = "#1b1a2a";
 		localStorage.setItem('removeBackground', 'yes');
 	};
-	if (document.getElementById("command-inp").value == "-pg remove-background --delete") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg remove-background --delete") {
 		document.body.style.backgroundImage = "url(/background1.svg)";
 		localStorage.removeItem('removeBackground');
 		window.location.reload();
 	};
-	if (document.getElementById("command-inp").value == "-pg background-problem") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg background-problem") {
 		document.body.style.backgroundImage = "url(/background2.jpg)";
 	};
-	if (document.getElementById("command-inp").value == "-pg background-problem --save") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg background-problem --save") {
 		document.body.style.backgroundImage = "url(/background2.jpg)";
 		localStorage.setItem('backgroundProblem', 'yes');
 	};
-	if (document.getElementById("command-inp").value == "-pg background-problem --delete") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg background-problem --delete") {
 		document.body.style.backgroundImage = "url(/background1.svg)";
 		localStorage.removeItem('backgroundProblem');
 		window.location.reload();
 	};
-	if (document.getElementById("command-inp").value == "-pg link") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg link") {
 		var linko = window.location.toString();
 	  gax.innerHTML = "<br>" + "PG:/" +linko +gax.innerHTML;
 	};
-	if (document.getElementById("command-inp").value == "-pg lite") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg lite") {
 		window.location.href = "lite.html";
 	};
-	if (document.getElementById("command-inp").value == "-pg lite --save") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg lite --save") {
 		window.location.href = "lite.html";
 		localStorage.setItem('lite', 'yes');
 	};
-	if (document.getElementById("command-inp").value == "-pg hideCookie") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg hideCookie") {
 		cookies1.style.visibility = "hidden";
 	};
-	if (document.getElementById("command-inp").value == "-pg hideDiscord") {
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg hideDiscord") {
 		discord.style.visibility = "hidden";
 	};
-	
-	if (document.getElementById("command-inp").value == "clear") {
+
+	if (document.getElementById("command-inp").value.toLowerCase() == "clear") {
 		gax.innerHTML = "";
 	};
 

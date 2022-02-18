@@ -1,7 +1,7 @@
 {
   "name": "Password Generator",
   "short_name": "PG",
-  "start_url": "/index.html",
+  "start_url": "./",
   "description": "The next-gen password generator. Local and safe. No trackers no ads. In modern looking design!",
   "icons": [
     {

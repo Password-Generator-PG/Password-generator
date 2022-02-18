@@ -2,7 +2,7 @@
   "name": "Password Generator",
   "short_name": "PG",
   "start_url": "/index.html",
-  "description": "The next-gen password generator.",
+  "description": "The next-gen password generator. Local and safe. No trackers no ads. In modern looking design!",
   "icons": [
     {
       "src": "icons/72x72.png",
@@ -66,5 +66,21 @@
 "orientation": "portrait",
 "scripts": {
   "build": "webpack"
-}
+},
+"screenshots" : [
+  {
+    "src": "./screenshots/screenshot_1.webp",
+    "sizes": "1080x2170",
+    "type": "image/webp",
+    "platform": "narrow",
+    "label": "Homescreen of PG"
+  },
+  {
+    "src": "./screenshots/screenshot_2.webp",
+    "sizes": "1080x2170",
+    "type": "image/webp",
+    "platform": "narrow",
+    "label": "Advanced page of PG"
+  },
+]
 }

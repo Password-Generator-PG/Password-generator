@@ -87,12 +87,12 @@
   {
     "name": "Simple",
     "url": "./index.html",
-    "icons": "./icons/96x96.png"
+    "icons": [{ "src": "/icons/192x192.png", "sizes": "192x192" }]
   },
   {
     "name": "Advanced",
     "url": "./advanced.html",
-    "icons": "./icons/96x96.png"
+    "icons": [{ "src": "/icons/192x192.png", "sizes": "192x192" }]
   }
 ]
 }

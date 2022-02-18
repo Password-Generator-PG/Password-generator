@@ -69,14 +69,14 @@
 },
 "screenshots": [
   {
-    "src": "./screenshots/screenshot_1.jpg",
+    "src": "./screenshots/screenshot_1.jpeg",
     "sizes": "1080x2170",
     "type": "image/webp",
     "platform": "narrow",
     "label": "Homescreen of PG"
   },
   {
-    "src": "./screenshots/screenshot_2.jpg",
+    "src": "./screenshots/screenshot_2.jpeg",
     "sizes": "1080x2170",
     "type": "image/webp",
     "platform": "narrow",

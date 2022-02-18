@@ -82,5 +82,17 @@
     "platform": "narrow",
     "label": "Advanced page of PG"
   }
+],
+"shortcuts" : [
+  {
+    "name": "Simple",
+    "url": "./index.html",
+    "icons": "./icons/96x96.png"
+  },
+  {
+    "name": "Advanced",
+    "url": "./advanced.html",
+    "icons": "./icons/96x96.png"
+  }
 ]
 }

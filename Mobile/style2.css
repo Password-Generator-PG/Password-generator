@@ -509,3 +509,18 @@ width: auto;
 #big-cookie {
 	font-size: 40px;
 }
+#githublink {
+	display: flex;
+	width: auto;
+	padding: 5px;
+	background-color: rgba(0 ,0 ,0 , 0.0);
+	border-radius: 25px;
+	margin: auto;
+	color: #fff;
+	text-decoration: none;
+}
+.github {
+	display: flex;
+	width: 100%;
+	text-align: center;
+}

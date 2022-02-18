@@ -715,3 +715,23 @@ line-height: 250px;       /* The same as your div height */
 #dowtxt:hover {
 	transform: translateY(2px);
 }
+#githublink {
+	display: flex;
+	width: auto;
+	padding: 5px;
+	background-color: rgba(0 ,0 ,0 , 0.0);
+	border-radius: 25px;
+	margin: auto;
+	color: #fff;
+	text-decoration: none;
+}
+.github {
+	display: flex;
+	width: 100%;
+	text-align: center;
+	animation: start04 2s;
+}
+@keyframes start04 {
+  from { margin-left: 200% }
+  to { margin-left: 0% }
+}

@@ -67,7 +67,7 @@
 "scripts": {
   "build": "webpack"
 },
-"screenshots" : [
+"screenshots": [
   {
     "src": "./screenshots/screenshot_1.webp",
     "sizes": "1080x2170",

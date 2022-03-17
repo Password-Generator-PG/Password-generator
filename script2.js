@@ -376,11 +376,28 @@ function bottom1(){
 		document.getElementById("command-inp").select();
 	}
 };
+//Run
+function bottom2(){
+	if (document.getElementById("run").style.visibility == "visible") {
+				document.getElementById("run").style.visibility = "hidden";
+						document.getElementById("run-inp").unselect();
+	} else {
+		document.getElementById("run").style.visibility = "visible";
+		document.getElementById("run-inp").select();
+	}
+};
+//Command RUN
+const comm2 = document.getElementById("run-inp");
+const commands2 = document.getElementById("run");
+const gax2 = document.getElementById("gax2");
 
-//background rotation
-//var bp = [
-	//'url(/BP/PG_2.JPG)',
-	//'url(/BP/PG_3.JPG)'
-//];
-//var randomBP = bp[Math.floor(Math.random()*bp.length)];
-	//document.body.style.backgroundImage = randomBP;
+comm2.addEventListener("keyup", function(event2) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    comclick2();
+  }
+});
+function comclick2(){
+		gax2.innerHTML = comm2.value;
+}

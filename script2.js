@@ -370,7 +370,6 @@ localStorage.setItem('lite', 'no');
 function bottom1(){
 	if (document.getElementById("command").style.visibility == "visible") {
 				document.getElementById("command").style.visibility = "hidden";
-						document.getElementById("command-inp").unselect();
 	} else {
 		document.getElementById("command").style.visibility = "visible";
 		document.getElementById("command-inp").select();
@@ -380,7 +379,6 @@ function bottom1(){
 function bottom2(){
 	if (document.getElementById("run").style.visibility == "visible") {
 				document.getElementById("run").style.visibility = "hidden";
-						document.getElementById("run-inp").unselect();
 	} else {
 		document.getElementById("run").style.visibility = "visible";
 		document.getElementById("run-inp").select();
@@ -395,9 +393,6 @@ comm2.addEventListener("keyup", function(event2) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     event.preventDefault();
-    comclick2();
+    eval(document.getElementById('run-inp').value);
   }
 });
-function comclick2(){
-		gax2.innerHTML = comm2.value;
-}

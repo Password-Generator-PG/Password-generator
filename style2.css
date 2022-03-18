@@ -521,10 +521,10 @@ width: auto;
 #run {
 	visibility: hidden;
 	width: 50%;
-	height: 50%;
+	height: auto;
 	margin: auto;
 	margin-top: 25%;
-	background-color: #000;
+	background-color: #7d20d4;
 	position: absolute;
 	text-overflow: ellipsis;
 	overflow-y: auto;
@@ -533,13 +533,13 @@ width: auto;
 	z-index: 812;
 }
 #command-inp {
-	background: #000;
+	background: #7d20d4;
 	color: #32e56f;
 	border: none;
 	width: 100%;
 }
 #run-inp {
-	background: #000;
+	background: #7d20d4;
 	color: #32e56f;
 	border: none;
 	width: 100%;

@@ -209,10 +209,10 @@ function comclick(){
 		alert("Working!");
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "help") {
-		gax.innerHTML =  "<br>" + "PG:/Current commands (every command starts with '-pg '):" + "<br>" + "reload (forces the page to reload)" +"<br>" + "reset (resets page completly)" +"<br>" + "test (does a test to see the functionallity of the page)" +"<br>" + "generate (generates a password)" +"<br>" + "copy (copies the password)" +"<br>" + "download (downloads the password)" +"<br>" + "close (closes the command popup)" + "<br>" + "$advanced (loads advanced page)" + "<br>" + "$support (loads support page)" + "<br>" + "$about (loads about page)" + "<br>" + "$donate (loads donation page)" + "<br>" + "remove-background (--save/--delete) (removes background image)" + "<br>" + "link (get current url)" + "<br>" + "background-problem (--save/--delete) (fixes background problems such as lightmode on browsers with forced dark mode)" + "<br>" + "lite (--save) (opens the lite version for people with bad connection or problems)" + "<br>" + "hideCookie (Hides cookie popup without saving)" + "<br>" + "hideDiscord (Hides discord popup without saving)" + gax.innerHTML;
+		gax.innerHTML =  "<br>" + "PG:/Current commands (every command starts with '-pg '):" + "<br>" + "reload (forces the page to reload)" +"<br>" + "reset (resets page completly)" +"<br>" + "test (does a test to see the functionallity of the page)" +"<br>" + "generate (generates a password)" +"<br>" + "copy (copies the password)" +"<br>" + "download (downloads the password)" +"<br>" + "close (closes the command popup)" + "<br>" + "$advanced (loads advanced page)" + "<br>" + "$support (loads support page)" + "<br>" + "$about (loads about page)" + "<br>" + "$donate (loads donation page)" + "<br>" + "remove-background (--save/--delete) (removes background image)" + "<br>" + "link (get current url)" + "<br>" + "background-problem (--save/--delete) (fixes background problems such as lightmode on browsers with forced dark mode)" + "<br>" + "lite (--save) (opens the lite version for people with bad connection or problems)" + "<br>" + "hideCookie (Hides cookie popup without saving)" + "<br>" + gax.innerHTML;
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg help") {
-		gax.innerHTML = "<br>" + "PG:/Current commands (every command starts with '-pg'):" + "<br>" + "reload (forces the page to reload)" +"<br>" + "reset (resets page completly)" +"<br>" + "test (does a test to see the functionallity of the page)" +"<br>" + "generate (generates a password)" +"<br>" + "copy (copies the password)" +"<br>" + "download (downloads the password)" +"<br>" + "close (closes the command popup)" + "<br>" + "$advanced (loads advanced page)" + "<br>" + "$support (loads support page)" + "<br>" + "$about (loads about page)" + "<br>" + "$donate (loads donation page)" + "<br>" + "remove-background (--save/--delete) (removes background image)" + "<br>" + "link (get current url)" + "<br>" + "background-problem (--save/--delete) (fixes background problems such as lightmode on browsers with forced dark mode)" + "<br>" + "lite (--save) (opens the lite version for people with bad connection or problems)" + "<br>" + "hideCookie (Hides cookie popup without saving)" + "<br>" + "hideDiscord (Hides discord popup without saving)" + gax.innerHTML;
+		gax.innerHTML = "<br>" + "PG:/Current commands (every command starts with '-pg'):" + "<br>" + "reload (forces the page to reload)" +"<br>" + "reset (resets page completly)" +"<br>" + "test (does a test to see the functionallity of the page)" +"<br>" + "generate (generates a password)" +"<br>" + "copy (copies the password)" +"<br>" + "download (downloads the password)" +"<br>" + "close (closes the command popup)" + "<br>" + "$advanced (loads advanced page)" + "<br>" + "$support (loads support page)" + "<br>" + "$about (loads about page)" + "<br>" + "$donate (loads donation page)" + "<br>" + "remove-background (--save/--delete) (removes background image)" + "<br>" + "link (get current url)" + "<br>" + "background-problem (--save/--delete) (fixes background problems such as lightmode on browsers with forced dark mode)" + "<br>" + "lite (--save) (opens the lite version for people with bad connection or problems)" + "<br>" + "hideCookie (Hides cookie popup without saving)" + "<br>" + gax.innerHTML;
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg reset") {
 		gax.innerHTML = "<br>" + "PG:/Resetting..." + gax.innerHTML;
@@ -269,16 +269,16 @@ function comclick(){
 				document.getElementById("command-inp").unselect();
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg $support") {
-		window.open("https://k-plus-password-generator.netlify.app/support.html");
+		window.open("https://password-generator.netlify.app/support.html");
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg $about") {
-		window.open("https://k-plus-password-generator.netlify.app/about.html");
+		window.open("https://password-generator.netlify.app/about.html");
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg $advanced") {
-		window.open("https://k-plus-password-generator.netlify.app/advanced.html");
+		window.open("https://password-generator.netlify.app/advanced.html");
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg $donate") {
-		window.open("https://k-plus-password-generator.netlify.app/donation.html");
+		window.open("https://password-generator.netlify.app/donation.html");
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg remove-background") {
 		document.body.style.background = "#1b1a2a";
@@ -352,3 +352,24 @@ function click26(){
 					cookies2.style.visibility = "hidden";
   };
 };
+//Run
+function bottom2(){
+	if (document.getElementById("run").style.visibility == "visible") {
+				document.getElementById("run").style.visibility = "hidden";
+	} else {
+		document.getElementById("run").style.visibility = "visible";
+		document.getElementById("run-inp").select();
+	}
+};
+//Command RUN
+const comm2 = document.getElementById("run-inp");
+const commands2 = document.getElementById("run");
+const gax2 = document.getElementById("gax2");
+
+comm2.addEventListener("keyup", function(event2) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    eval(document.getElementById('run-inp').value);
+  }
+});

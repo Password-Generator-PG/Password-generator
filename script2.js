@@ -375,24 +375,3 @@ function bottom1(){
 		document.getElementById("command-inp").select();
 	}
 };
-//Run
-function bottom2(){
-	if (document.getElementById("run").style.visibility == "visible") {
-				document.getElementById("run").style.visibility = "hidden";
-	} else {
-		document.getElementById("run").style.visibility = "visible";
-		document.getElementById("run-inp").select();
-	}
-};
-//Command RUN
-const comm2 = document.getElementById("run-inp");
-const commands2 = document.getElementById("run");
-const gax2 = document.getElementById("gax2");
-
-comm2.addEventListener("keyup", function(event2) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    eval(document.getElementById('run-inp').value);
-  }
-});

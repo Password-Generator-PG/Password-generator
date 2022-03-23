@@ -1,4 +1,4 @@
 /*
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self' https://fonts.googleapis.com/css?family=Muli&display=swap https://fonts.gstatic.com/s/muli/v26/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30eg.woff2 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css; img-src *; child-src 'none'
+  Content-Security-Policy: default-src 'self' https://fonts.googleapis.com/css?family=Muli&display=swap https://fonts.gstatic.com/s/muli/v26/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30eg.woff2 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css; img-src 'self'; child-src 'none'; script-src 'self' https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js; style-src 'self' https://fonts.googleapis.com/css?family=Muli&display=swap https://fonts.gstatic.com/s/muli/v26/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30eg.woff2 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css 

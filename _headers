@@ -3,3 +3,4 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src *; img-src 'self' d33wubrfki0l68.cloudfront.net/ ; font-src cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/ fonts.gstatic.com/s/muli/v26/ ;  script-src 'self' 'unsafe-hashes' password-generator.netlify.app/* 'nonce-nrionjoirinsnegn3n0' https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js; style-src 'self' 'nonce-nrionjoirinsnegn3n' fonts.googleapis.com/ ;

@@ -45,6 +45,13 @@ generate.addEventListener('click', () => {
 	resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 });
 
+const length = +lengthEl.value;
+const hasLower = lowercaseEl.checked;
+const hasUpper = uppercaseEl.checked;
+const hasNumber = numbersEl.checked;
+const hasSymbol = symbolsEl.checked;
+resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
+
 function generatePassword(lower, upper, number, symbol, length) {
 	let generatedPassword = '';
 	const typesCount = lower + upper + number + symbol;

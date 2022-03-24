@@ -4,7 +4,7 @@
 
  ##  About PG 
 
- The Password generator by K+ (short name: PG) is created with the target of making the web experience of everyone safe. A long and complex password is very important. If it's for your Google, Amazon, bank account,... There are no exceptions to make. One from our Startpage generated password needs 3 sextillion years to be cracked from a computer. That's a lot, right? For example: "qwertz1" needs 1 second to be cracked. A long and complex password is very important. PG also has an extremely simple UI (e.g. for young and old people with just a little technology knowledge). We will do everything to save some people's online accounts. 
+ The Password generator by K+ (short name: PG) is created with the target of making the web experience of everyone safe. A long and complex password is very important. If it's for your Google, Amazon, bank account,... There are no exceptions to make. One from our Startpage generated password needs 3 sextillion years to be cracked from a computer. That's a lot, right? For example: "qwertz1" needs 1 second to be cracked. A long and complex password is very important. PG also has an extremely simple UI (e.g. for young and old people with just a little bit of technology knowledge). 
 PG provides...
 | Features | Supported          |
 | ------- | ------------------ |

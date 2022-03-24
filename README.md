@@ -1,6 +1,6 @@
  
 
- # PASSWORD GENERATOR BY K+ 
+ # PASSWORD GENERATOR (PG)
 
  ##  About PG 
 

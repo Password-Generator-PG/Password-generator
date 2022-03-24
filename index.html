@@ -56,7 +56,7 @@
 
 <ul id="top">
   <li><a class="active" href="#nothing">Password Generator</a></li>
-  <li><a href="advanced.html">Advanced</a></li>
+  <li><a href="advanced.html" accesskey="w">Advanced</a></li>
   <li><a href="about.html">About</a></li>
   <li><a href="contact.html">Contact</a></li>
   <li style="float:right"><a href="donation.html">Donate</a></li>
@@ -71,7 +71,7 @@
 <div class="container">
 	<div class="result-container">
 		<span id="result"></span>
-		<button class="btn" id="clipboard">
+		<button class="btn" id="clipboard" aria-label="Copy Password to clipboard" accesskey="c">
 			<i class="far fa-clipboard"></i>
 		</button>
 	</div>
@@ -97,10 +97,10 @@
 			<input type="checkbox" id="symbols" checked />
 		</div>
 	</div>
-	<button class="btn-btn-large" id="generate">
+	<button class="btn-btn-large" id="generate" aria-label="Generate Password" accesskey="g">
 		<span>Generate password</span>
 	</button>
-  <button id="btn-dow" id="download">
+  <button id="btn-dow" id="download" aria-label="Download Password as .txt or .html file" accesskey="v">
     <a href="#download">
     <img src="downl.png" alt="Download" width="30px" class="img3">
     </a>
@@ -110,7 +110,7 @@
 
 <div class="github">
 
-<a id="githublink" href="https://github.com/K-plus69/Password-generator">GitHub repository</a>
+<a id="githublink" href="https://github.com/K-plus69/Password-generator" accesskey="h">GitHub repository</a>
 </div>
 
 </div>
@@ -119,30 +119,30 @@
 <div id="command">
   <input type="text" placeholder="help" autofocus id="command-inp" value="">
   <p id="gax"></p>
-  <button type="button" id="bnt001917" onclick="comclick()"></button>
+  <button type="button" id="bnt001917" onclick="comclick()" ></button>
 </div>
 
 <div id="alert">
 <p id="alert2"></p>
-<button type="button" id="okay" onclick="click22()">Okay</button>
+<button type="button" id="okay" onclick="click22()" aria-label="Okay" accesskey="k">Okay</button>
 </div>
 <div id="discord">
 <p id="discord2">We have now our own discord server!</p>
 <img src="discord-ico.png" width="100px" alt="Discord icon">
 <p>Get Informated about updates, security news and much more!</p>
 <p> Do you want to join?</p>
-<button type="button" id="okay2"  onclick="click24()">Yes!</button>
-<button type="button" id="okay3" onclick="click25()">No, thanks!</button>
+<button type="button" id="okay2"  onclick="click24()" accesskey="3">Yes!</button>
+<button type="button" id="okay3" onclick="click25()" accesskey="2">No, thanks!</button>
 </div>
 <div id="cookiess">
   <img src="term-ico.svg" width="200px" alt="Terms">
 <p id="big-cookie">Security</p>
 <p>This website just uses local storage for functionallity. No cookies, No tracker, no ads, no... You are and will stay safe! Noone sees your generated/downloaded/copied/... passwords!</p>
-<button type="button" id="accept" onclick="click26()">Okay</button>
+<button type="button" id="accept" onclick="click26()" aria-label="Okay" accesskey="1">Okay</button>
 </div>
 
 <div class="bottom">
-  <button type="button" id="bottomcc" onclick="bottom1()">Console</button>
+  <button type="button" id="bottomcc" onclick="bottom1()" aria-label="Console" accesskey="x">Console</button>
 </div>
 <div class="textorhtml" id="textorhtmlid">
   <h1>Choose an<br>option...</h1>
@@ -151,14 +151,14 @@
     <div class="icontxt">
       <h3>.txt</h3>
     </div>
-    <button type="button" id="dowtxt"><span>Download</span></button>
+    <button type="button" id="dowtxt" aria-label="Download as .txt" accesskey="t"><span>Download</span></button>
   </div>
   <div class="htmlf">
     <h3>Html file (beta)</h3>
     <div class="iconhtml">
       <h3>.html</h3>
     </div>
-    <button type="button" id="dowhtml">
+    <button type="button" id="dowhtml" aria-label="Download as .html" accesskey="r">
       <span>Download</span>
     </button>
   </div>

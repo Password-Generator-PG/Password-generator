@@ -58,6 +58,7 @@ The Browsers we used to test PG (inform us if others work too):
 
 | Browser | Supported          |
 | ------- | ------------------ |
+| Duckduckgo | :white_check_mark: |
 | Firefox | :white_check_mark: |
 | Chrome  | :white_check_mark: |
 | Opera   | :white_check_mark: |

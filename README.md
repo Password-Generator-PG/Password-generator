@@ -5,8 +5,23 @@
  ##  About PG 
 
  The Password generator by K+ (short name: PG) is created with the target of making the web experience of everyone safe. A long and complex password is very important. If it's for your Google, Amazon, bank account,... There are no exceptions to make. One from our Startpage generated password needs 3 sextillion years to be cracked from a computer. That's a lot, right? For example: "qwertz1" needs 1 second to be cracked. A long and complex password is very important. PG also has an extremely simple UI (e.g. for young and old people with just a little technology knowledge). We will do everything to save some people's online accounts. 
+PG provides...
+| Features | Supported          |
+| ------- | ------------------ |
+| Keyboard navigation | :white_check_mark: |
+| Blind navigation | :white_check_mark: |
+| Generate Safe password | :white_check_mark: |
+| Download Password | :white_check_mark: |
+| Copy password | :white_check_mark: |
+| Console | :white_check_mark: |
+| Lite mode | :white_check_mark: |
+| Dark mode (standard) | :white_check_mark: |
+| Advanced mode | :white_check_mark: |
+| Tab scrolling | :x: |
 
- ## Installation 
+Unfortunately its not possible to select buttons by clicking "tab".
+
+ ## Installation (PWA)
 
  You can install PG as a PWA (Progressive Web-App)! It looks like a native app but it isn't. For Android, IOS, Windows!  
 

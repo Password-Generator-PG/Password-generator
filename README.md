@@ -63,7 +63,9 @@ The Browsers we used to test PG (inform us if others work too):
 | Brave | :white_check_mark: |
 | Safari | :white_check_mark: |
 
-## Keyboard navigation in PG (only Home and Advanced)
+## Keyboard navigation in PG
+- Only for homepage and Advanced
+- Only on PC/Tablet/Laptop
 ### Homepage
 | Home | Button       |
 | ------- | ------------------ |

@@ -63,6 +63,36 @@ The Browsers we used to test PG (inform us if others work too):
 | Brave | :white_check_mark: |
 | Safari | :white_check_mark: |
 
+## Keyboard navigation in PG (only Home and Advanced)
+### Homepage
+| Home | Button       |
+| ------- | ------------------ |
+| Advanced | alt + w |
+| Generate Password | alt + g |
+| Copy Password| alt + c |
+| Download Options | alt + v |
+| Github link | alt + h  |
+| Alert | alt + k |
+| Console | alt + x |
+| Download .txt | alt + t |
+| Download .html | alt + r |
+| Discord "yes" | alt + 3 |
+| Discord "no" | alt + 2 |
+| Accept Security Popup| alt + 1 |
+
+### Advanced
+| Advanced | Button  |
+| ------- | ------------------ |
+| Homepage | alt + w |
+| Generate Password | alt + g |
+| Copy Password | alt + c |
+| Download Password | alt + d |
+| Alert | alt + k |
+| Set length | alt +  l|
+| Toggle uppercase | alt + u |
+| Toggle lowercase | alt + m |
+| Toggle numbers | alt + n |
+| Toggle symbols | alt + s |
 
  ## About K+ 
 

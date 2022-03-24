@@ -19,7 +19,7 @@ PG provides...
 | Advanced mode | :white_check_mark: |
 | Tab scrolling | :x: |
 
-Unfortunately its not possible to select buttons by clicking "tab".
+Unfortunately, it is not possible to select buttons by clicking "tab".
 
  ## Installation (PWA)
 

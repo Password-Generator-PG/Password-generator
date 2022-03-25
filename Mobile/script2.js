@@ -300,14 +300,14 @@ function comclick(){
 		window.location.reload();
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg background-problem") {
-		document.body.style.backgroundImage = "url(/background2.jpg)";
+		document.body.style.backgroundImage = "url(/Mobile/background2.jpg)";
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg background-problem --save") {
-		document.body.style.backgroundImage = "url(/background2.jpg)";
+		document.body.style.backgroundImage = "url(/Mobile/background2.jpg)";
 		localStorage.setItem('backgroundProblem', 'yes');
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg background-problem --delete") {
-		document.body.style.backgroundImage = "url(/background1.svg)";
+		document.body.style.backgroundImage = "url(/Mobile/background1.svg)";
 		localStorage.removeItem('backgroundProblem');
 		window.location.reload();
 	};

@@ -1,4 +1,5 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js');
+import { GenerateSW } from 'workbox-webpack-plugins';
 
 workbox.routing.registerRoute(
   ({request}) => request.destination === 'image',
@@ -10,5 +11,15 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
     new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
   );
-
+  new GenerateSW({
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/fonts\.gstatic\.com/,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'google-fonts-webfonts'
+            }
+          }
+        ]
+      }),
 workbox.precaching.precacheAndRoute([]);

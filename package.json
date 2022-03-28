@@ -3,7 +3,7 @@
   "short_name": "PG",
   "version": "1.2.1",
   "description": "The next-gen password generator. Local and safe. No trackers no ads. In modern looking design!",
-  "main": "readme.js",
+  "Scope": "./",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/K-plus69/Password-generator.git"

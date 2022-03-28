@@ -147,7 +147,7 @@ function click22(){
 	alert3.style.visibility = "hidden";
 };
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('./sw.js');
+	navigator.serviceWorker.register('sw.js');
 };
 // Initialize deferredPrompt for use later to show browser install prompt.
 
@@ -181,6 +181,7 @@ window.isUpdateAvailable = new Promise(function(resolve, reject) {
 								if (navigator.serviceWorker.controller) {
 									// new update available
 									resolve(true);
+									alert("update available")
 								} else {
 									// no update available
 									resolve(false);

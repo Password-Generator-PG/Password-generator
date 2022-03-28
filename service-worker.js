@@ -11,16 +11,16 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
     new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
+    workbox.strategies.cacheFirst({
+      cacheName: 'google-fonts',
+      plugins: [
+        new workbox.expiration.Plugin({
+          maxEntries: 30,
+        }),
+        new workbox.cacheableResponse.Plugin({
+          statuses: [0, 200]
+        }),
+      ],
+    }),
   );
-  new GenerateSW({
-        runtimeCaching: [
-          {
-            urlPattern: /^https:\/\/fonts\.gstatic\.com/,
-            handler: 'StaleWhileRevalidate',
-            options: {
-              cacheName: 'google-fonts-webfonts'
-            }
-          }
-        ]
-      }),
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);

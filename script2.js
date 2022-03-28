@@ -147,7 +147,7 @@ function click22(){
 	alert3.style.visibility = "hidden";
 };
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('sw.js');
+	navigator.serviceWorker.register('/sw.js');
 };
 // Initialize deferredPrompt for use later to show browser install prompt.
 
@@ -171,7 +171,7 @@ window.isUpdateAvailable = new Promise(function(resolve, reject) {
 	// lazy way of disabling service workers while developing
 	if ('serviceWorker' in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
 		// register service worker file
-		navigator.serviceWorker.register('sw.js')
+		navigator.serviceWorker.register('/sw.js')
 			.then(reg => {
 				reg.onupdatefound = () => {
 					const installingWorker = reg.installing;

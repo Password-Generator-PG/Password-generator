@@ -8,5 +8,5 @@ module.exports = {
 		/^utm_/,
 		/^fbclid$/
 	],
-	swSrc: 'service-worker.js'
+	"swSrc": 'service-worker.js'
 };

@@ -147,7 +147,7 @@ function click22(){
 	alert3.style.visibility = "hidden";
 };
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('./sw.js');
+	navigator.serviceWorker.register('./service-worker.js');
 };
 // Initialize deferredPrompt for use later to show browser install prompt.
 

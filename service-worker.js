@@ -8,12 +8,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
     new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
     workbox.strategies.NetworkFirst({
-      cacheName: 'google-fonts',
-      plugins: [
-        new workbox.cacheableResponse.Plugin({
-          statuses: [0, 200]
-        })
-      ],
+      cacheName: 'google-fonts'
     }),
   );
 

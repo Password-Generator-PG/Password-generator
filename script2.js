@@ -384,14 +384,4 @@ function bottom1(){
 //version
 fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest')
 	.then(response => response.json())
-	.then(data => document.getElementById("versioncc").innerHTML = data.tag_name)
-	.then(data => var tag_name = data.tag_name);
-if (document.getElementById("versioncc").value !== tag_name)
-	  if ('serviceWorker' in navigator) {
-			console.log("PWA outdated!");
-	    navigator.serviceWorker.getRegistrations().then(function (registrations) {
-	      for (let registration of registrations) {
-	        registration.update()
-	      }
-	    })
-	  }
+	.then(data => document.getElementById("versioncc").innerHTML = data.tag_name);

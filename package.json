@@ -1,23 +1,211 @@
 {
   "name": "Password Generator",
   "short_name": "PG",
-  "version": "1.2.1",
+  "start_url": "./",
+  "main": "script2.js",
   "description": "The next-gen password generator. Local and safe. No trackers no ads. In modern looking design!",
-  "Scope": "./",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/K-plus69/Password-generator.git"
+  "icons": [
+    {
+      "src": "icons/72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/120x120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+   "src": "icons/192x192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+ },
+ {
+"src": "icons/384x384.png",
+"sizes": "384x384",
+"type": "image/png"
+},
+ {
+   "src": "icons/512x512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+ },
+ {
+   "src": "logo.png",
+   "sizes": "1080x1080",
+   "type": "image/png"
+ }
+],
+"theme_color": "#1b1a2a",
+"background_color": "#1f1c4b",
+"display": "standalone",
+"orientation": "portrait",
+"scripts": {
+  "build": "webpack"
+},
+"screenshots": [
+  {
+    "src": "./screenshots/screenshot_1.jpeg",
+    "sizes": "1080x2170",
+    "type": "image/webp",
+    "platform": "narrow",
+    "label": "Homescreen of PG"
   },
-  "keywords": [
-    "pg"
-  ],
-  "author": "K+",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/K-plus69/Password-generator/issues"
-  },
-  "homepage": "https://github.com/K-plus69/Password-generator#readme",
-  "dependencies": {
-    "workbox-cli": "^6.5.2"
+  {
+    "src": "./screenshots/screenshot_2.jpeg",
+    "sizes": "1080x2170",
+    "type": "image/webp",
+    "platform": "narrow",
+    "label": "Advanced page of PG"
   }
+],
+"shortcuts" : [
+  {
+    "name": "Simple",
+    "url": "./index.html",
+    "icons": [
+      {
+        "src": "icons/72x72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/96x96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/120x120.png",
+        "sizes": "120x120",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/128x128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/152x152.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/180x180.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+     "src": "icons/192x192.png",
+     "sizes": "192x192",
+     "type": "image/png"
+   },
+   {
+  "src": "icons/384x384.png",
+  "sizes": "384x384",
+  "type": "image/png"
+  },
+   {
+     "src": "icons/512x512.png",
+     "sizes": "512x512",
+     "type": "image/png"
+   },
+   {
+     "src": "logo.png",
+     "sizes": "1080x1080",
+     "type": "image/png"
+   }
+    ]
+  },
+  {
+    "name": "Advanced",
+    "url": "./advanced.html",
+    "icons": [
+      {
+        "src": "icons/72x72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/96x96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/120x120.png",
+        "sizes": "120x120",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/128x128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/152x152.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/180x180.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+     "src": "icons/192x192.png",
+     "sizes": "192x192",
+     "type": "image/png"
+   },
+   {
+  "src": "icons/384x384.png",
+  "sizes": "384x384",
+  "type": "image/png"
+  },
+   {
+     "src": "icons/512x512.png",
+     "sizes": "512x512",
+     "type": "image/png"
+   },
+   {
+     "src": "logo.png",
+     "sizes": "1080x1080",
+     "type": "image/png"
+   }
+    ]
+  }
+]
 }

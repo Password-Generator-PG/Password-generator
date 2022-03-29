@@ -45,6 +45,9 @@
       x.style.display = "block";
     }
     }
+    window.addEventListener('offline', () => {
+  alert("Looks like you are offline! Sended forms may be lost.")
+});
     </script>
     <!-- partial:index.partial.html -->
     <div class="container">

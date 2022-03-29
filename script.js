@@ -127,9 +127,7 @@ const closebnt22 = document.getElementById("okay");
 function click22(){
 	alert3.style.visibility = "hidden";
 };
-if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('/service-worker.js');
-};
+
 //app
 if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('/sw.js');

@@ -357,3 +357,8 @@ function click26(){
 					cookies2.style.visibility = "hidden";
   };
 };
+//version
+
+fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest')
+	.then(response => response.json())
+	.then(data => document.getElementById("versioncc").innerHTML = data.tag_name);

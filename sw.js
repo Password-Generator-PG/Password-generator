@@ -3,8 +3,8 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox
 
 workbox.routing.registerRoute(
   ({request}) => request.destination === 'image',
-  new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)')
-new RegExp2('https://password-generator.netlify.app/(.*)')
+  new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
+new RegExp2('https://password-generator.netlify.app/(.*)'),
 new RegExp3(' https://d33wubrfki0l68.cloudfront.net/(.*)'))
   new workbox.strategies.NetworkFirst({
     cacheName: 'google-fonts',

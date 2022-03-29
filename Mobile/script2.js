@@ -128,7 +128,7 @@ function click22(){
 	alert3.style.visibility = "hidden";
 };
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('/service-worker.js');
+	navigator.serviceWorker.register('/sw.js');
 }
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent the mini-infobar from appearing on mobile
@@ -137,8 +137,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
   // Update UI notify the user they can install the PWA
   showInstallPromotion();
-  // Optionally, send analytics event that PWA install promo was shown.
-  console.log(`'beforeinstallprompt' event was fired.`);
 });
 
 window.addEventListener('appinstalled', () => {
@@ -146,8 +144,6 @@ window.addEventListener('appinstalled', () => {
   hideInstallPromotion();
   // Clear the deferredPrompt so it can be garbage collected
   deferredPrompt = null;
-  // Optionally, send analytics event to indicate successful install
-  console.log('PWA was installed');
 });
 // make the whole serviceworker process into a promise so later on we can
 // listen to it and in case new content is available a toast will be shown
@@ -155,7 +151,7 @@ window.isUpdateAvailable = new Promise(function(resolve, reject) {
 	// lazy way of disabling service workers while developing
 	if ('serviceWorker' in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
 		// register service worker file
-		navigator.serviceWorker.register('service-worker.js')
+		navigator.serviceWorker.register('sw.js')
 			.then(reg => {
 				reg.onupdatefound = () => {
 					const installingWorker = reg.installing;
@@ -165,6 +161,7 @@ window.isUpdateAvailable = new Promise(function(resolve, reject) {
 								if (navigator.serviceWorker.controller) {
 									// new update available
 									resolve(true);
+									alert("update available")
 								} else {
 									// no update available
 									resolve(false);

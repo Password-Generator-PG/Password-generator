@@ -7,6 +7,5 @@ workbox.routing.registerRoute(
   new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'))
   new workbox.strategies.CacheFirst({
     cacheName: 'google-fonts'
-  })
-);
+  });
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);

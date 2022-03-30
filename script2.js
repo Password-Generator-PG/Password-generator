@@ -379,6 +379,7 @@ fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest'
 	if (localStorage.getItem('version') != data.tag_name) {
 		localStorage.setItem('version', data.tag_name);
 		if ('serviceWorker' in navigator) {
+			document.getElementById("updatecc").style.display = "block";
 			navigator.serviceWorker.getRegistrations().then(function(registrations) {
 
 for(let registration of registrations) {
@@ -391,7 +392,6 @@ for(let registration of registrations) {
               caches.delete(cacheName);
             });
           }).then(() => {
-								document.getElementById("updatecc").style.display = "block";
             navigator.serviceWorker.register('sw.js');
 						setTimeout(installtimer, 15000);
 						function installtimer() {

@@ -377,4 +377,8 @@ for(let registration of registrations) {
           })
         }
 	} });
-//get version
+//get status
+if (registration.installing) {
+	alert3.style.visibility = "visible";
+	document.getElementById("alert2").innerHTML = "Service Worker is updating/installing... ";
+}

@@ -227,6 +227,22 @@ function comclick(){
 		localStorage.removeItem('removeBackground');
 		localStorage.removeItem('A%0FBF$812');
 		localStorage.removeItem('chung812');
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.getRegistrations().then(function(registrations) {
+
+for(let registration of registrations) {
+
+	 registration.unregister()
+
+}});
+          caches.keys().then(cacheNames => {
+            cacheNames.forEach(cacheName => {
+              caches.delete(cacheName);
+            });
+          }).then(() => {
+            navigator.serviceWorker.register('sw.js');
+          })
+        };
 		window.location.reload();
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg reload") {
@@ -359,14 +375,14 @@ function click26(){
 };
 //version
 //version
+const update = document.getElementById("updatecc");
 var serviceWorker;
 fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest')
 	.then(response => response.json())
 	.then(data => {document.getElementById("versioncc").innerHTML = localStorage.getItem('version');
 	if (localStorage.getItem('version') != data.tag_name) {
+		update.style.visibility = "visible";
 		localStorage.setItem('version', data.tag_name);
-		alert3.style.visibility = "visible";
-		document.getElementById("alert2").innerHTML = "Installing update...";
 		if ('serviceWorker' in navigator) {
 			navigator.serviceWorker.getRegistrations().then(function(registrations) {
 
@@ -381,8 +397,6 @@ for(let registration of registrations) {
             });
           }).then(() => {
             navigator.serviceWorker.register('sw.js');
-						alert3.style.visibility = "visible";
-						document.getElementById("alert2").innerHTML = "Installing update. Please be patient.";
 						setTimeout(installtimer, 30000);
 						function installtimer() {
 window.location.reload();

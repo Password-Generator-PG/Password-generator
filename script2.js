@@ -226,6 +226,22 @@ function comclick(){
 		localStorage.removeItem('removeBackground');
 		localStorage.removeItem('A%0FBF$812');
 		localStorage.removeItem('chung812');
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.getRegistrations().then(function(registrations) {
+
+for(let registration of registrations) {
+
+	 registration.unregister()
+
+}});
+          caches.keys().then(cacheNames => {
+            cacheNames.forEach(cacheName => {
+              caches.delete(cacheName);
+            });
+          }).then(() => {
+            navigator.serviceWorker.register('sw.js');
+          })
+        };
 		window.location.reload();
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg reload") {
@@ -379,11 +395,15 @@ for(let registration of registrations) {
             navigator.serviceWorker.register('sw.js');
 						alert3.style.visibility = "visible";
 						document.getElementById("alert2").innerHTML = "Installing update. Please be patient.";
-						setTimeout(installtimer, 30000);
+						setTimeout(installtimer, 15000);
 						function installtimer() {
-window.location.reload();
+window.open("#update")
 }
           })
         }
 	} });
 //get status
+if (window.location.href.indexOf("#update") > -1) {
+	alert3.style.visibility = "visible";
+	document.getElementById("alert2").innerHTML = "Installing update...";
+}

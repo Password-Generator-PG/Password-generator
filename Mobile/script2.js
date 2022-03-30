@@ -226,7 +226,8 @@ function comclick(){
 		localStorage.removeItem('backgroundProblem');
 		localStorage.removeItem('removeBackground');
 		localStorage.removeItem('A%0FBF$812');
-		localStorage.removeItem('chung812');
+		localStorage.removeItem('chung812'); localStorage.removeItem('version');
+		
 		if ('serviceWorker' in navigator) {
 			navigator.serviceWorker.getRegistrations().then(function(registrations) {
 

@@ -379,7 +379,7 @@ for(let registration of registrations) {
             navigator.serviceWorker.register('sw.js');
 						alert3.style.visibility = "visible";
 						document.getElementById("alert2").innerHTML = "Installing update. Please be patient.";
-						setTimeout(InstallTimer, 30000);
+						setTimeout(InstallTimer(), 30000);
 						function InstallTimer() {
 window.location.reload();
 }

@@ -355,6 +355,7 @@ function bottom1(){
 	}
 };
 //version
+var serviceWorker;
 fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest')
 	.then(response => response.json())
 	.then(data => {document.getElementById("versioncc").innerHTML = data.tag_name;
@@ -363,7 +364,7 @@ fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest'
 		if ('serviceWorker' in navigator) {
 			navigator.serviceWorker.getRegistrations().then(function(registrations) {
 
-for(var registration of registrations) {
+for(let registration of registrations) {
 
 	 registration.unregister()
 
@@ -378,7 +379,8 @@ for(var registration of registrations) {
         }
 	} });
 //get status
-if (registration.installing) {
+if (navigator.serviceWorker.installing) {
+	serviceWorker = navigator.serviceWorker.installing;
 	alert3.style.visibility = "visible";
 	document.getElementById("alert2").innerHTML = "Service Worker is updating/installing... ";
 }

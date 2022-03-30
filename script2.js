@@ -395,7 +395,7 @@ for(let registration of registrations) {
             navigator.serviceWorker.register('sw.js');
 						setTimeout(installtimer, 15000);
 						function installtimer() {
-							window.open("https://password-generator.netlify.app/")
+						window.location.reload();
 }
           })
         }

@@ -358,7 +358,7 @@ function bottom1(){
 var serviceWorker;
 fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest')
 	.then(response => response.json())
-	.then(data => {document.getElementById("versioncc").innerHTML = data.tag_name;
+	.then(data => {document.getElementById("versioncc").innerHTML = localStorage.getItem('version');
 	if (localStorage.getItem('version') != data.tag_name) {
 		localStorage.setItem('version', data.tag_name);
 		alert3.style.visibility = "visible";

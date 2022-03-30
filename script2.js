@@ -375,12 +375,9 @@ for(let registration of registrations) {
             });
           }).then(() => {
             navigator.serviceWorker.register('sw.js');
+						alert3.style.visibility = "visible";
+						document.getElementById("alert2").innerHTML = "Installing update...";
           })
         }
 	} });
 //get status
-if (navigator.serviceWorker.installing) {
-	serviceWorker = navigator.serviceWorker.installing;
-	alert3.style.visibility = "visible";
-	document.getElementById("alert2").innerHTML = "Service Worker is updating/installing... ";
-}

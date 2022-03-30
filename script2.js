@@ -391,7 +391,7 @@ for(let registration of registrations) {
               caches.delete(cacheName);
             });
           }).then(() => {
-								updates.style.visibility = "block";
+								document.getElementById("updatecc").style.display = "block";
             navigator.serviceWorker.register('sw.js');
 						setTimeout(installtimer, 15000);
 						function installtimer() {

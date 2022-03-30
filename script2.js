@@ -363,7 +363,7 @@ fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest'
 		if ('serviceWorker' in navigator) {
 			navigator.serviceWorker.getRegistrations().then(function(registrations) {
 
-for(let registration of registrations) {
+for(var registration of registrations) {
 
 	 registration.unregister()
 

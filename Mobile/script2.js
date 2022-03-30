@@ -375,15 +375,15 @@ function click26(){
 };
 //version
 //version
-const update = document.getElementById("updatecc");
+var updates = document.getElementById("updatecc");
 var serviceWorker;
 fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest')
 	.then(response => response.json())
 	.then(data => {document.getElementById("versioncc").innerHTML = localStorage.getItem('version');
 	if (localStorage.getItem('version') != data.tag_name) {
-		update.style.visibility = "visible";
 		localStorage.setItem('version', data.tag_name);
 		if ('serviceWorker' in navigator) {
+			document.getElementById("updatecc").style.display = "block";
 			navigator.serviceWorker.getRegistrations().then(function(registrations) {
 
 for(let registration of registrations) {
@@ -397,9 +397,9 @@ for(let registration of registrations) {
             });
           }).then(() => {
             navigator.serviceWorker.register('sw.js');
-						setTimeout(installtimer, 30000);
+						setTimeout(installtimer, 15000);
 						function installtimer() {
-window.location.reload();
+							window.open("https://password-generator.netlify.app/")
 }
           })
         }

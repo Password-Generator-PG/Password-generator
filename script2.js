@@ -167,33 +167,6 @@ window.addEventListener('appinstalled', () => {
   // Clear the deferredPrompt so it can be garbage collected
   deferredPrompt = null;
 });
-window.isUpdateAvailable = new Promise(function(resolve, reject) {
-	// lazy way of disabling service workers while developing
-	if ('serviceWorker' in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
-		// register service worker file
-		navigator.serviceWorker.register('sw.js')
-			.then(reg => {
-				reg.onupdatefound = () => {
-					const installingWorker = reg.installing;
-					installingWorker.onstatechange = () => {
-						switch (installingWorker.state) {
-							case 'installed':
-								if (navigator.serviceWorker.controller) {
-									// new update available
-									resolve(true);
-									alert("update available")
-								} else {
-									// no update available
-									resolve(false);
-								}
-								break;
-						}
-					};
-				};
-			})
-			.catch(err => console.error('[SW ERROR]', err));
-	}
-});
 //discord
 const discord = document.getElementById('discord');
 const discord2 = document.getElementById("okay3");
@@ -388,13 +361,13 @@ fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest'
 	if (localStorage.getItem('version') != data.tag_name) {
 		localStorage.setItem('version', data.tag_name);
 		if ('serviceWorker' in navigator) {
-          serviceWorkerRegistration.unregister();
+          navigator.serviceWorker.unregister();
           caches.keys().then(cacheNames => {
             cacheNames.forEach(cacheName => {
               caches.delete(cacheName);
             });
           }).then(() => {
-            serviceWorkerRegistration.register();
+            navigator.serviceWorker.register();
           })
         }
 	} });

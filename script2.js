@@ -403,7 +403,3 @@ window.open("#update")
         }
 	} });
 //get status
-if (window.location.href.indexOf("#update") > -1) {
-	alert3.style.visibility = "visible";
-	document.getElementById("alert2").innerHTML = "Installing update...";
-}

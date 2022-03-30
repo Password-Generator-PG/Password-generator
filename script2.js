@@ -361,7 +361,7 @@ fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest'
 	if (localStorage.getItem('version') != data.tag_name) {
 		localStorage.setItem('version', data.tag_name);
 		if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.unregister('sw.js');
+           registration.unregister('sw.js');
           caches.keys().then(cacheNames => {
             cacheNames.forEach(cacheName => {
               caches.delete(cacheName);

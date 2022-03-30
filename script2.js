@@ -377,7 +377,6 @@ for(let registration of registrations) {
             });
           }).then(() => {
             navigator.serviceWorker.register('sw.js');
-						window.location.reload();
 						alert3.style.visibility = "visible";
 						document.getElementById("alert2").innerHTML = "Installing update. Please be patient.";
           })

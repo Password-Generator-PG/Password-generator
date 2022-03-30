@@ -361,6 +361,8 @@ fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest'
 	.then(data => {document.getElementById("versioncc").innerHTML = data.tag_name;
 	if (localStorage.getItem('version') != data.tag_name) {
 		localStorage.setItem('version', data.tag_name);
+		alert3.style.visibility = "visible";
+		document.getElementById("alert2").innerHTML = "Installing update...";
 		if ('serviceWorker' in navigator) {
 			navigator.serviceWorker.getRegistrations().then(function(registrations) {
 
@@ -375,8 +377,7 @@ for(let registration of registrations) {
             });
           }).then(() => {
             navigator.serviceWorker.register('sw.js');
-						alert3.style.visibility = "visible";
-						document.getElementById("alert2").innerHTML = "Installing update...";
+
           })
         }
 	} });

@@ -384,5 +384,18 @@ function bottom1(){
 //version
 fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest')
 	.then(response => response.json())
-	.then(data => document.getElementById("versioncc").innerHTML = data.tag_name && localStorage.setItem('version', data.tag_name););
+	.then(data => {document.getElementById("versioncc").innerHTML = data.tag_name;
+	if (localStorage.getItem('version') != data.tag_name) {
+		localStorage.setItem('version', data.tag_name);
+		if ('serviceWorker' in navigator) {
+          serviceWorkerRegistration.unregister();
+          caches.keys().then(cacheNames => {
+            cacheNames.forEach(cacheName => {
+              caches.delete(cacheName);
+            });
+          }).then(() => {
+            serviceWorkerRegistration.register();
+          })
+        }
+	} });
 //get version

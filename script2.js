@@ -376,7 +376,7 @@ fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest'
 	.then(response => response.json())
 	.then(data => {document.getElementById("versioncc").innerHTML = localStorage.getItem('version');
 	if (localStorage.getItem('version') != data.tag_name) {
-		if (localStorage.getItem('version') == "null") {
+		if (localStorage.getItem('version') == null) {
 			document.getElementById("updatetov").innerHTML = data.tag_name;
 		} else {
 			document.getElementById("updatetov").innerHTML = localStorage.getItem('version') + " -> " + data.tag_name;

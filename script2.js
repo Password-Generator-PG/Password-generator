@@ -404,7 +404,7 @@ for(let registration of registrations) {
 //get status
 if (localStorage.getItem('updatern') == '1') {
 document.getElementById("updatecc").style.display = "block";
-localStorage.setItem('update.rn', '0');
+localStorage.setItem('updatern', '0');
 setTimeout(updatetime, 30000);
 function updatetime() {
 window.location.reload();

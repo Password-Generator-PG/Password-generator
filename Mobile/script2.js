@@ -190,7 +190,6 @@ function click26(){
 function bottom1(){
 	if (document.getElementById("command").style.visibility == "visible") {
 				document.getElementById("command").style.visibility = "hidden";
-						document.getElementById("command-inp").unselect();
 	} else {
 		document.getElementById("command").style.visibility = "visible";
 		document.getElementById("command-inp").select();

@@ -392,7 +392,7 @@ for(let registration of registrations) {
               caches.delete(cacheName);
             });
           }).then(() => {
-						setTimeout(installtimer, 15000);
+						setTimeout(installtimer, 7000);
             navigator.serviceWorker.register('sw.js');
 						localStorage.setItem('updatern', '1');
 						function installtimer() {
@@ -405,7 +405,7 @@ for(let registration of registrations) {
 if (localStorage.getItem('updatern') == '1') {
 document.getElementById("updatecc").style.display = "block";
 localStorage.setItem('updatern', '0');
-setTimeout(updatetime, 30000);
+setTimeout(updatetime, 25000);
 function updatetime() {
 window.location.reload();
 }

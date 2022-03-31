@@ -398,7 +398,7 @@ for(let registration of registrations) {
             });
           }).then(() => {
             navigator.serviceWorker.register('sw.js');
-						localStorage.setItem('update.rn', '1');
+						localStorage.setItem('updatern', '1');
 						setTimeout(installtimer, 15000);
 						function installtimer() {
 						window.location.reload();
@@ -407,11 +407,11 @@ for(let registration of registrations) {
         }
 	} });
 //get status
-if (localStorage.getItem('update.rn') == '1') {
+if (localStorage.getItem('updatern') == '1') {
 document.getElementById("updatecc").style.display = "block";
 localStorage.setItem('update.rn', '0');
 setTimeout(updatetime, 30000);
 function updatetime() {
 window.location.reload();
-}
-}
+};
+};

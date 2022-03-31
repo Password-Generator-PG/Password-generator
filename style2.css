@@ -760,6 +760,9 @@ line-height: 250px;       /* The same as your div height */
 		backdrop-filter: blur(2rem);
 		z-index: 10;
 }
+.update p {
+	font-size: 25px;
+}
 .loader {
   width:50%;
 	height: 5%;

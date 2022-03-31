@@ -544,6 +544,9 @@ width: auto;
 		backdrop-filter: blur(2rem);
 		z-index: 5;
 }
+.update p {
+	font-size: 20px;
+}
 .loader {
   width:80%;
 	height: 5%;

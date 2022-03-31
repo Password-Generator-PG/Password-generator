@@ -1,6 +1,6 @@
- [![Netlify Status](https://api.netlify.com/api/v1/badges/e57a6b3a-0a76-4868-be26-b3c2606a54db/deploy-status)](https://app.netlify.com/sites/password-generator/deploys)
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/e57a6b3a-0a76-4868-be26-b3c2606a54db/deploy-status)](https://app.netlify.com/sites/password-generator/deploys) [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
- [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+
 
  # PASSWORD GENERATOR (PG)
 

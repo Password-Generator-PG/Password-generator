@@ -167,23 +167,7 @@ window.addEventListener('appinstalled', () => {
   // Clear the deferredPrompt so it can be garbage collected
   deferredPrompt = null;
 });
-//discord
-const discord = document.getElementById('discord');
-const discord2 = document.getElementById("okay3");
-if (localStorage.getItem('dc') == "none") {
 
-}else {
-		discord.style.visibility = "visible";
-	function click24() {
- window.open('https://discord.gg/xrBPSPK396','_blank');
- localStorage.setItem('dc', 'none');
- 	discord.style.visibility = "hidden";
-};
-function click25(){
-  	localStorage.setItem('dc', 'none');
-  		discord.style.visibility = "hidden";
-  };
-};
 //cookies
 const cookies1 = document.getElementById('cookiess');
 if (localStorage.getItem('cookie-terms') == "okay") {
@@ -213,14 +197,13 @@ function comclick(){
 		alert("Working!");
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "help") {
-		gax.innerHTML =  "<br>" + "PG:/Current commands (every command starts with '-pg '):" + "<br>" + "reload (forces the page to reload)" +"<br>" + "reset (resets page completly)" +"<br>" + "test (does a test to see the functionallity of the page)" +"<br>" + "generate (generates a password)" +"<br>" + "copy (copies the password)" +"<br>" + "download (downloads the password)" +"<br>" + "close (closes the command popup)" + "<br>" + "$advanced (loads advanced page)" + "<br>" + "$support (loads support page)" + "<br>" + "$about (loads about page)" + "<br>" + "$donate (loads donation page)" + "<br>" + "remove-background (--save/--delete) (removes background image)" + "<br>" + "link (get current url)" + "<br>" + "background-problem (--save/--delete) (fixes background problems such as lightmode on browsers with forced dark mode)" + "<br>" + "lite (--save) (opens the lite version for people with bad connection or problems)" + "<br>" + "hideCookie (Hides cookie popup without saving)" + "<br>" + "hideDiscord (Hides discord popup without saving)" + gax.innerHTML;
+		gax.innerHTML =  "<br>" + "PG:/Current commands (every command starts with '-pg '):" + "<br>" + "reload (forces the page to reload)" +"<br>" + "reset (resets page completly)" +"<br>" + "test (does a test to see the functionallity of the page)" +"<br>" + "generate (generates a password)" +"<br>" + "copy (copies the password)" +"<br>" + "download (downloads the password)" +"<br>" + "close (closes the command popup)" + "<br>" + "$advanced (loads advanced page)" + "<br>" + "$support (loads support page)" + "<br>" + "$about (loads about page)" + "<br>" + "$donate (loads donation page)" + "<br>" + "remove-background (--save/--delete) (removes background image)" + "<br>" + "link (get current url)" + "<br>" + "background-problem (--save/--delete) (fixes background problems such as lightmode on browsers with forced dark mode)" + "<br>" + "lite (--save) (opens the lite version for people with bad connection or problems)" + "<br>" + "hideCookie (Hides cookie popup without saving)" + "<br>"  + gax.innerHTML;
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg help") {
-		gax.innerHTML = "<br>" + "PG:/Current commands (every command starts with '-pg'):" + "<br>" + "reload (forces the page to reload)" +"<br>" + "reset (resets page completly)" +"<br>" + "test (does a test to see the functionallity of the page)" +"<br>" + "generate (generates a password)" +"<br>" + "copy (copies the password)" +"<br>" + "download (downloads the password)" +"<br>" + "close (closes the command popup)" + "<br>" + "$advanced (loads advanced page)" + "<br>" + "$support (loads support page)" + "<br>" + "$about (loads about page)" + "<br>" + "$donate (loads donation page)" + "<br>" + "remove-background (--save/--delete) (removes background image)" + "<br>" + "link (get current url)" + "<br>" + "background-problem (--save/--delete) (fixes background problems such as lightmode on browsers with forced dark mode)" + "<br>" + "lite (--save) (opens the lite version for people with bad connection or problems)" + "<br>" + "hideCookie (Hides cookie popup without saving)" + "<br>" + "hideDiscord (Hides discord popup without saving)" +gax.innerHTML;
+		gax.innerHTML = "<br>" + "PG:/Current commands (every command starts with '-pg'):" + "<br>" + "reload (forces the page to reload)" +"<br>" + "reset (resets page completly)" +"<br>" + "test (does a test to see the functionallity of the page)" +"<br>" + "generate (generates a password)" +"<br>" + "copy (copies the password)" +"<br>" + "download (downloads the password)" +"<br>" + "close (closes the command popup)" + "<br>" + "$advanced (loads advanced page)" + "<br>" + "$support (loads support page)" + "<br>" + "$about (loads about page)" + "<br>" + "$donate (loads donation page)" + "<br>" + "remove-background (--save/--delete) (removes background image)" + "<br>" + "link (get current url)" + "<br>" + "background-problem (--save/--delete) (fixes background problems such as lightmode on browsers with forced dark mode)" + "<br>" + "lite (--save) (opens the lite version for people with bad connection or problems)" + "<br>" + "hideCookie (Hides cookie popup without saving)" + "<br>"  +gax.innerHTML;
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg reset") {
 		gax.innerHTML = "<br>" + "PG:/Resetting..." + gax.innerHTML;
-		localStorage.removeItem('dc');
 		localStorage.removeItem('cookie-terms');
 		localStorage.removeItem('backgroundProblem');
 		localStorage.removeItem('removeBackground');
@@ -337,10 +320,6 @@ for(let registration of registrations) {
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg hideCookie") {
 		cookies1.style.visibility = "hidden";
 	};
-	if (document.getElementById("command-inp").value.toLowerCase() == "-pg hideDiscord") {
-		discord.style.visibility = "hidden";
-	};
-
 	if (document.getElementById("command-inp").value.toLowerCase() == "clear") {
 		gax.innerHTML = "";
 	};

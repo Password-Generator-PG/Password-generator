@@ -227,7 +227,7 @@ function comclick(){
 		localStorage.removeItem('removeBackground');
 		localStorage.removeItem('A%0FBF$812');
 		localStorage.removeItem('chung812'); localStorage.removeItem('version');
-		
+
 		if ('serviceWorker' in navigator) {
 			navigator.serviceWorker.getRegistrations().then(function(registrations) {
 
@@ -398,6 +398,7 @@ for(let registration of registrations) {
             });
           }).then(() => {
             navigator.serviceWorker.register('sw.js');
+						localStorage.setItem('update.rn', '1');
 						setTimeout(installtimer, 15000);
 						function installtimer() {
 						window.location.reload();
@@ -406,3 +407,11 @@ for(let registration of registrations) {
         }
 	} });
 //get status
+if (localStorage.getItem('update.rn') == '1') {
+document.getElementById("updatecc").style.display = "block";
+localStorage.setItem('update.rn', '0');
+setTimeout(updatetime, 30000);
+function updatetime() {
+window.location.reload();
+}
+}

@@ -394,7 +394,7 @@ for(let registration of registrations) {
           }).then(() => {
 						setTimeout(installtimer, 15000);
             navigator.serviceWorker.register('sw.js');
-						localStorage.setItem('update.rn', '1');
+						localStorage.setItem('updatern', '1');
 						function installtimer() {
 						window.location.reload();
 }
@@ -402,7 +402,7 @@ for(let registration of registrations) {
         }
 	} });
 //get status
-if (localStorage.getItem('update.rn') == '1') {
+if (localStorage.getItem('updatern') == '1') {
 document.getElementById("updatecc").style.display = "block";
 localStorage.setItem('update.rn', '0');
 setTimeout(updatetime, 30000);

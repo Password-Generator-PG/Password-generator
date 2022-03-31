@@ -572,7 +572,7 @@ width: auto;
   left:0;
   background:#32e56f;
   width:0;
-  animation:borealisBar 2s linear infinite;
+  animation:borealisBar 1.5s linear infinite;
 }
 
 @keyframes borealisBar {
@@ -580,12 +580,19 @@ width: auto;
     left:0%;
     right:100%;
     width:0%;
+		background-color: #32e56f00;
   }
   10% {
     left:0%;
     right:75%;
     width:25%;
   }
+	25% {
+		background-color: #32e56f;
+	}
+	75% {
+		background-color: #32e56f;
+	}
   90% {
     right:0%;
     left:75%;
@@ -595,5 +602,6 @@ width: auto;
     left:100%;
     right:0%;
     width:0%;
+		background-color: #32e56f00;
   }
 }

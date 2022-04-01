@@ -57,7 +57,8 @@ h3:hover {
 }
 input[type=checkbox] {
 	margin-right: 0;
-	visibility: collapse;
+	visibility: hidden;
+	display: none;
 	width: 0px;
 	height: 0px;
 }
@@ -103,6 +104,13 @@ animation: start03 2s;
 @keyframes start03 {
   from { margin-left: 200% }
   to { margin-left: 15% }
+}
+.welcomet {
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .result-container {
 	background-color: rgba(0, 0, 0, 0.7);
@@ -192,6 +200,11 @@ animation: start03 2s;
 .btn-btn-large span {
   position: relative;
   z-index: 1;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .btn-btn-large:after {
@@ -255,7 +268,11 @@ ul {
 	transition: 1s;
 	animation:
 	start01 2s;
-
+	-webkit-user-select: none;
+	   -khtml-user-select: none;
+	    -moz-user-select: none;
+	    -o-user-select: none;
+	    user-select: none;
 }
 @keyframes start01 {
   from { width: 50% }
@@ -336,12 +353,22 @@ span {
 	padding: 8px 12px;
 	transition: 1s;
 	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 
 #btn-dow span {
   position: relative;
   z-index: 1;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 #btn-dow:after {
@@ -437,6 +464,11 @@ z-index: 4;
 }
 #cookiess p {
 	transition: 0s;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 #cookiess img {
 	transition: 0s;
@@ -698,6 +730,11 @@ line-height: 250px;       /* The same as your div height */
 	margin: auto;
 	color: #fff;
 	text-decoration: none;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .github {
 	display: flex;

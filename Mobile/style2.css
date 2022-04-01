@@ -131,7 +131,13 @@ align-items: center;
 justify-content: center;
 align-items: center;
 }
-
+.welcomet {
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
 .result-container {
 	background-color: rgba(0, 0, 0, 0.37);
 	display: flex;
@@ -212,6 +218,11 @@ align-items: center;
 	z-index: 1;
 	margin-right: 5px;
 	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .blr1 {
@@ -293,6 +304,11 @@ span {
 	height: 40px;
 	left: 0px;
 	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 
@@ -388,6 +404,11 @@ width: auto;
 }
 #cookiess p {
 	transition: 0s;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 #cookiess img {
 	transition: 0s;
@@ -488,6 +509,11 @@ z-index: 4;
 #cookiess p {
 	transition: 0s;
 	font-size: 20px;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 #cookiess img {
 	transition: 0s;
@@ -521,6 +547,11 @@ width: auto;
 	margin: auto;
 	color: #fff;
 	text-decoration: none;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .github {
 	display: flex;

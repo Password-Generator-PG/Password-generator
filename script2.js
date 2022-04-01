@@ -112,7 +112,7 @@ const textorhtml = document.getElementById("textorhtmlid");
 		} else {
 			textorhtml.style.visibility = "hidden";
 		}
-	}, false);
+	});
 
 document.getElementById("dowhtml").addEventListener("click", function(){
 
@@ -125,7 +125,7 @@ document.getElementById("dowhtml").addEventListener("click", function(){
 
     download(filename, text);
 		textorhtml.style.visibility = "hidden";
-}}, false);
+}});
 document.getElementById("dowtxt").addEventListener("click", function(){
 	if (resultEl.innerText == "") {
 		alert3.style.visibility = "visible";

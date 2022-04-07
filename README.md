@@ -20,7 +20,6 @@ PG provides...
 | Advanced mode | :white_check_mark: |
 | Tab scrolling | :x: |
 
-Unfortunately, it is not possible to select buttons by clicking "tab".
 
  ## Installation (PWA)
 
@@ -95,8 +94,6 @@ The Browsers we used to test PG (inform us if others work too):
 | Console | alt + x |
 | Download .txt | alt + t |
 | Download .html | alt + r |
-| Discord "yes" | alt + 3 |
-| Discord "no" | alt + 2 |
 | Accept Security Popup| alt + 1 |
 
 ### Advanced

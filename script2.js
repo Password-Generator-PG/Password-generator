@@ -393,3 +393,8 @@ function updatetime() {
 window.location.reload();
 }
 }
+//notifications
+Notification.requestPermission(function(status) {
+	alert3.style.visibility = "visible";
+	document.getElementById("alert2").innerHTML = "Notifications:" , status;
+});

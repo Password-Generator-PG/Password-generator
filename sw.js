@@ -1,6 +1,19 @@
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js');
 
+self.addEventListener('notificationclick', function(e) {
+  var notification = e.notification;
+  var primaryKey = notification.data.primaryKey;
+  var action = e.action;
+
+  if (action === 'close') {
+    notification.close();
+  } else {
+    clients.openWindow('https://github.com/Password-Generator-PG/Password-generator/releases/latest/');
+    notification.close();
+  }
+});
+
 workbox.routing.registerRoute(
   ({request}) => request.destination === 'image',
   new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),

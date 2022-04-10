@@ -394,8 +394,3 @@ window.location.reload();
 }
 }
 //notifications
-self.registration.showNotification('New message from Alice', {
-  actions: [
-    {action: 'like', title: 'Like'},
-    {action: 'reply', title: 'Reply'}]
-});

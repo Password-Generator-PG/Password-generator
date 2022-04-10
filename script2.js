@@ -394,18 +394,8 @@ window.location.reload();
 }
 }
 //notifications
-if ('Notification' in window && navigator.serviceWorker) {
-  // Display the UI to let the user toggle notifications
-}
-Notification.requestPermission(function(status) {
-	console.log(status);
+self.registration.showNotification('New message from Alice', {
+  actions: [
+    {action: 'like', title: 'Like'},
+    {action: 'reply', title: 'Reply'}]
 });
-
-function displayNotification() {
-  if (Notification.permission == 'granted') {
-    navigator.serviceWorker.getRegistration().then(function(reg) {
-      reg.showNotification('Hello world!');
-    });
-  }
-};
-displayNotification();

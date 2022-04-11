@@ -178,10 +178,7 @@ function click26(){
   	localStorage.setItem('cookie-terms', 'okay');
 					cookies1.style.visibility = "hidden";
 
-		Notification.requestPermission()
-		.then((permission) => {
-			handlePermission(permission);
-		})
+		Notification.requestPermission();
 
 	}};
 //Command

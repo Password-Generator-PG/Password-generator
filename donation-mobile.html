@@ -104,6 +104,16 @@ window.isUpdateAvailable = new Promise(function(resolve, reject) {
   <h1>Payments</h1>
   <p>BTC: bc1qtac88mmcxlskm769mntpfezdcmddxrm4axqp2p<br><br>ETH: 0x2a6F7cD693A1daDec1f2005B0709755E6eebd549<br><br>Smart Chain (BNB): 0x2a6F7cD693A1daDec1f2005B0709755E6eebd549</p>
 </div>
-
+<script type="text/javascript">
+if (localStorage.getItem('backgroundProblem') == "yes") {
+      document.body.style.backgroundImage = "url(/background2.jpg)";
+}
+if (localStorage.getItem('removeBackground') == "yes") {
+  document.body.style.background = "#1b1a2a";
+}
+if (localStorage.getItem('lite') == "yes") {
+  window.location.href = "lite.html";
+}
+</script>
 </body>
 </html>

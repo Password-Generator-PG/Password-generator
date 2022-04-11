@@ -132,48 +132,12 @@ if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('/sw.js');
 }
 window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent the mini-infobar from appearing on mobile
-  //e.preventDefault();
-  // Stash the event so it can be triggered later.
   deferredPrompt = e;
-  // Update UI notify the user they can install the PWA
-  //showInstallPromotion();
 });
 
 window.addEventListener('appinstalled', () => {
-  // Hide the app-provided install promotion
   hideInstallPromotion();
-  // Clear the deferredPrompt so it can be garbage collected
   deferredPrompt = null;
-});
-// make the whole serviceworker process into a promise so later on we can
-// listen to it and in case new content is available a toast will be shown
-window.isUpdateAvailable = new Promise(function(resolve, reject) {
-	// lazy way of disabling service workers while developing
-	if ('serviceWorker' in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
-		// register service worker file
-		navigator.serviceWorker.register('sw.js')
-			.then(reg => {
-				reg.onupdatefound = () => {
-					const installingWorker = reg.installing;
-					installingWorker.onstatechange = () => {
-						switch (installingWorker.state) {
-							case 'installed':
-								if (navigator.serviceWorker.controller) {
-									// new update available
-									resolve(true);
-									alert("update available")
-								} else {
-									// no update available
-									resolve(false);
-								}
-								break;
-						}
-					};
-				};
-			})
-			.catch(err => console.error('[SW ERROR]', err));
-	}
 });
 //cookies
 const cookies1 = document.getElementById('cookiess');
@@ -184,6 +148,7 @@ if (localStorage.getItem('cookie-terms-mob') == "okay") {
 function click26(){
   	localStorage.setItem('cookie-terms-mob', 'okay');
 					cookies1.style.visibility = "hidden";
+					Notification.requestPermission();
   };
 };
 //Console
@@ -415,5 +380,9 @@ localStorage.setItem('updatern', '0');
 setTimeout(updatetime, 25000);
 function updatetime() {
 window.location.reload();
+};
+setTimeout(notifytime, 15000);
+function notifytime() {
+let message = new Notification("Updated to version " + localStorage.getItem('version'));
 }
-}
+};

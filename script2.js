@@ -393,6 +393,10 @@ localStorage.setItem('updatern', '0');
 setTimeout(updatetime, 25000);
 function updatetime() {
 window.location.reload();
+};
+setTimeout(notifytime, 15000);
+function notifytime() {
+let message = new Notification("Updated to version " + localStorage.getItem('version'));
 }
 };
 //notifications

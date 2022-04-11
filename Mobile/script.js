@@ -180,3 +180,12 @@ window.isUpdateAvailable = new Promise(function(resolve, reject) {
 			.catch(err => console.error('[SW ERROR]', err));
 	}
 });
+if (localStorage.getItem('backgroundProblem') == "yes") {
+			document.body.style.backgroundImage = "url(/background2.jpg)";
+}
+if (localStorage.getItem('removeBackground') == "yes") {
+	document.body.style.background = "#1b1a2a";
+}
+if (localStorage.getItem('lite') == "yes") {
+	window.location.href = "lite.html";
+}

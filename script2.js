@@ -178,7 +178,7 @@ function click26(){
   	localStorage.setItem('cookie-terms', 'okay');
 					cookies1.style.visibility = "hidden";
 
-		Notification.requestPermission();
+		Notification.requestPermission().then(function(permission) { console.log('permiss', permission)});
 
 	}};
 //Command

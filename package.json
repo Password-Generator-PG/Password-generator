@@ -69,7 +69,7 @@
 "display": "standalone",
 "orientation": "portrait",
 "scripts": {
-  "build": "webpack"
+  "build": "npm",
 },
 "screenshots": [
   {

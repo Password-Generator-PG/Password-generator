@@ -394,5 +394,5 @@ window.location.reload();
 }
 }
 //notifications
-let promise = Notification.requestPermission();
+Notification.requestPermission(callback);
 let message = new Notification("hi");

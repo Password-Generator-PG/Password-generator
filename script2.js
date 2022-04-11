@@ -396,7 +396,7 @@ window.location.reload();
 };
 setTimeout(notifytime, 15000);
 function notifytime() {
-let message = new Notification("Updated to version " + localStorage.getItem('version'));
+let message = new Notification("Updated PG to version " + localStorage.getItem('version'));
 }
 };
 //notifications

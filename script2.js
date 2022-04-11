@@ -407,4 +407,3 @@ window.location.reload();
 }
 }
 //notifications
-let message = new Notification("hi");

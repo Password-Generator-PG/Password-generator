@@ -394,7 +394,6 @@ window.location.reload();
 }
 }
 //notifications
-update();
-function update() {
-var notification = new Notification("bob");
-}
+let promise = Notification.requestPermission();
+let message = new Notification("hi");
+message.onclick = testN(){alert("hi")};

@@ -68,9 +68,6 @@
 "background_color": "#1f1c4b",
 "display": "standalone",
 "orientation": "portrait",
-"scripts": {
-  "build": "npm run build",
-},
 "screenshots": [
   {
     "src": "./screenshots/screenshot_1.jpeg",

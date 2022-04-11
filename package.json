@@ -1,5 +1,5 @@
 {
-  "name": "Password-Generator",
+  "name": "Password Generator",
   "short_name": "PG",
   "start_url": "./",
   "main": "script2.js",
@@ -68,6 +68,9 @@
 "background_color": "#1f1c4b",
 "display": "standalone",
 "orientation": "portrait",
+"scripts": {
+  "build": "webpack"
+},
 "screenshots": [
   {
     "src": "./screenshots/screenshot_1.jpeg",

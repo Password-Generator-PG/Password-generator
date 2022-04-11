@@ -181,7 +181,7 @@ window.isUpdateAvailable = new Promise(function(resolve, reject) {
 	}
 });
 if (localStorage.getItem('backgroundProblem') == "yes") {
-			document.body.style.backgroundImage = "url(/background2.jpg)";
+			document.body.style.backgroundImage = "url(/Mobile/background2.jpg)";
 }
 if (localStorage.getItem('removeBackground') == "yes") {
 	document.body.style.background = "#1b1a2a";

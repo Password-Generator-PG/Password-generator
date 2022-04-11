@@ -313,7 +313,7 @@ for(let registration of registrations) {
 	comm.value = "";
 };
 if (localStorage.getItem('backgroundProblem') == "yes") {
-			document.body.style.backgroundImage = "url(/background2.jpg)";
+			document.body.style.backgroundImage = "url(/Mobile/background2.jpg)";
 }
 if (localStorage.getItem('removeBackground') == "yes") {
 	document.body.style.background = "#1b1a2a";
@@ -383,6 +383,6 @@ window.location.reload();
 };
 setTimeout(notifytime, 15000);
 function notifytime() {
-let message = new Notification("Updated to version " + localStorage.getItem('version'));
+let message = new Notification("Updated PG to version " + localStorage.getItem('version'));
 }
 };

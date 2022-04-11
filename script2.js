@@ -177,21 +177,13 @@ cookies1.style.visibility = "visible";
 function click26(){
   	localStorage.setItem('cookie-terms', 'okay');
 					cookies1.style.visibility = "hidden";
-					if (!('Notification' in window)) {
-	console.log("This browser does not support notifications.");
-} else {
-	if(checkNotificationPromise()) {
+
 		Notification.requestPermission()
 		.then((permission) => {
 			handlePermission(permission);
 		})
-	} else {
-		Notification.requestPermission(function(permission) {
-			handlePermission(permission);
-		});
-	}
-}
-}};
+
+	};
 //Command
 const comm = document.getElementById("command-inp");
 const commands = document.getElementById("command");

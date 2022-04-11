@@ -1,5 +1,5 @@
 {
-  "name": "Password Generator",
+  "name": "Password-Generator",
   "short_name": "PG",
   "start_url": "./",
   "main": "script2.js",

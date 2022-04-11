@@ -2,7 +2,11 @@
   "name": "Password Generator",
   "short_name": "PG",
   "start_url": "./",
+  "main": "script2.js",
   "description": "The next-gen password generator. Local and safe. No trackers no ads. In modern looking design!",
+  "permissions": {
+    "desktop-notification":{}
+},
   "icons": [
     {
       "src": "icons/72x72.png",
@@ -64,7 +68,9 @@
 "background_color": "#1f1c4b",
 "display": "standalone",
 "orientation": "portrait",
-
+"scripts": {
+  "build": "webpack"
+},
 "screenshots": [
   {
     "src": "./screenshots/screenshot_1.jpeg",

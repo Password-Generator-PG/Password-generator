@@ -183,7 +183,7 @@ function click26(){
 			handlePermission(permission);
 		})
 
-	};
+	}};
 //Command
 const comm = document.getElementById("command-inp");
 const commands = document.getElementById("command");

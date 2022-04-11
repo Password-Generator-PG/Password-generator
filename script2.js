@@ -191,7 +191,7 @@ function click26(){
 		});
 	}
 };
-
+};
 //Command
 const comm = document.getElementById("command-inp");
 const commands = document.getElementById("command");
@@ -405,5 +405,5 @@ setTimeout(updatetime, 25000);
 function updatetime() {
 window.location.reload();
 }
-}
+};
 //notifications

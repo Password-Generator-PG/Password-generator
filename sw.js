@@ -1,18 +1,6 @@
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js');
 
-self.addEventListener('notificationclick', function(eb) {
-  var notification = eb.notification;
-  var primaryKey = notification.data.primaryKey;
-  var action = eb.action;
-
-  if (action === 'close') {
-    notification.close();
-  } else {
-    clients.openWindow('https://github.com/Password-Generator-PG/Password-generator/releases/latest/');
-    notification.close();
-  }
-});
 
 workbox.routing.registerRoute(
   ({request}) => request.destination === 'image',

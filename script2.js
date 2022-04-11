@@ -396,4 +396,3 @@ window.location.reload();
 //notifications
 let promise = Notification.requestPermission();
 let message = new Notification("hi");
-message.onclick = testN(){alert("hi")};

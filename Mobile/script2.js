@@ -372,7 +372,10 @@ for(let registration of registrations) {
 }
           })
         }
-	} });
+	} })
+	.catch(error => {
+        document.getElementById("versioncc").innerHTML = localStorage.getItem('version');
+    });
 //get status
 if (localStorage.getItem('updatern') == '1') {
 document.getElementById("updatecc").style.display = "block";

@@ -106,11 +106,14 @@ function download(filename, text) {
 }
 // Start file download.
 const textorhtml = document.getElementById("textorhtmlid");
-	document.getElementById("btn-dow").addEventListener("click", function(){
+	document.getElementById("btn-dow").addEventListener("click", function(event){
+		event.preventDefault();
 		if (textorhtml.style.visibility === "hidden") {
 			textorhtml.style.visibility = "visible";
+			event.preventDefault();
 		} else {
 			textorhtml.style.visibility = "hidden";
+			event.preventDefault();
 		}
 	});
 

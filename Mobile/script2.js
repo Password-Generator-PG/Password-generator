@@ -181,6 +181,11 @@ function comclick(){
 		 localStorage.removeItem('version');
 		window.location.reload();
 	};
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg upgrade") {
+		gax.innerHTML = "<br>" + "PG:/Upgrading..." + gax.innerHTML;
+		 localStorage.removeItem('version');
+		window.location.reload();
+	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg reload") {
 		gax.innerHTML = "<br>" + "PG:/Reloading..." + gax.innerHTML;
 		window.location.reload();

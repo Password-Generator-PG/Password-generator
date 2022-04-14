@@ -34,12 +34,22 @@ input[type=number] {
 p {
 	margin: 5px 0;
 	transition: 1s;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 p:hover {
 	transform: translateY(2px);
 }
 h1 {
 	transition: 1s;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 h1:hover {
 	transform: translateY(2px);
@@ -51,11 +61,41 @@ h2 {
 }
 h2:hover {
 	transform: translateY(2px);
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 input[type=checkbox] {
 	margin-right: 0;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
-
+label {
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+span {
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+a {
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
 .float1 {
 	align-items: flex;
 	justify-content: flex;

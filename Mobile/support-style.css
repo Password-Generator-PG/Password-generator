@@ -17,6 +17,11 @@ body {
 	justify-content: center;
 	padding: 10px;
 	min-height: 100%;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .topnav {
 	background-color: rgb(31, 28, 75, 0.27);

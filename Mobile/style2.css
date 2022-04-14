@@ -349,6 +349,11 @@ span {
 	-webkit-tap-highlight-color: transparent;
 	bottom: 10px;
 	left:auto;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 #alert p {
 	transition: 0s;
@@ -440,6 +445,11 @@ width: auto;
 	height: 30px;
 	bottom: 0;
 	    z-index: 10;
+			-webkit-user-select: none;
+		   -khtml-user-select: none;
+		    -moz-user-select: none;
+		    -o-user-select: none;
+		    user-select: none;
 }
 #bottomcc {
 	background-color: #696969;
@@ -505,6 +515,11 @@ z-index: 4;
 	width: 100%;
 	height: auto;
 	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 #cookiess p {
 	transition: 0s;
@@ -588,7 +603,7 @@ width: auto;
    -khtml-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
-    user-select: none; 
+    user-select: none;
 }
 .loader {
   width:80%;

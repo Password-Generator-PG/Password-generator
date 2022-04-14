@@ -447,8 +447,7 @@ width: auto;
 
 #cookiess {
 	border: none;
-	visibility: hidden;
-	display:block;
+	display:none;
 	position: absolute;
 	cursor: pointer;
 	outline: none;
@@ -504,7 +503,7 @@ width: auto;
 	font-size: 40px;
 }
 #command {
-	visibility: hidden;
+	display: none;
 	width: 50%;
 	height: 50%;
 	margin: auto;
@@ -571,8 +570,8 @@ width: auto;
 }
 .textorhtml {
 	border: none;
-	visibility: hidden;
-	display: block;
+	display: none;
+	place-items: center;
 	position: absolute;
 	outline: none;
 	overflow: hidden;
@@ -601,6 +600,7 @@ z-index: 10;
 	text-align: center;
 vertical-align: middle;
 line-height: 50px;       /* The same as your div height */
+margin-left: 10px;
 }
 .txtf {
 	float: left;

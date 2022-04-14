@@ -140,23 +140,13 @@ window.addEventListener('appinstalled', () => {
   deferredPrompt = null;
 });
 //cookies
-const cookies1 = document.getElementById('cookiess');
-if (localStorage.getItem('cookie-terms-mob') == "okay") {
 
-}else {
-
-function click26(){
-  	localStorage.setItem('cookie-terms-mob', 'okay');
-					cookies1.style.visibility = "hidden";
-					Notification.requestPermission().then(function(permission) { console.log('permiss', permission)});
-  };
-};
 //Console
 function bottom1(){
-	if (document.getElementById("command").style.visibility == "visible") {
-				document.getElementById("command").style.visibility = "hidden";
+	if (document.getElementById("command").style.display == "block") {
+				document.getElementById("command").style.display = "none";
 	} else {
-		document.getElementById("command").style.visibility = "visible";
+		document.getElementById("command").style.display = "block";
 		document.getElementById("command-inp").select();
 	}
 };
@@ -189,23 +179,6 @@ function comclick(){
 		localStorage.removeItem('backgroundProblem');
 		localStorage.removeItem('removeBackground');
 		 localStorage.removeItem('version');
-
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.getRegistrations().then(function(registrations) {
-
-for(let registration of registrations) {
-
-	 registration.unregister()
-
-}});
-          caches.keys().then(cacheNames => {
-            cacheNames.forEach(cacheName => {
-              caches.delete(cacheName);
-            });
-          }).then(() => {
-            navigator.serviceWorker.register('sw.js');
-          })
-        };
 		window.location.reload();
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg reload") {
@@ -327,13 +300,12 @@ localStorage.setItem('lite', 'no');
 
 //cookiess
 const cookies2 = document.getElementById('cookiess');
-if (localStorage.getItem('cookie-terms') == "okay") {
-
-}else {
-cookies2.style.visibility = "visible";
+if (localStorage.getItem('cookie-terms') != "okay") {
+cookies2.style.display = "grid";
 function click26(){
   	localStorage.setItem('cookie-terms', 'okay');
-					cookies2.style.visibility = "hidden";
+					cookies2.style.display = "none";
+					Notification.requestPermission().then(function(permission) { console.log('permiss', permission)});
   };
 };
 //version

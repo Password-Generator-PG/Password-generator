@@ -386,8 +386,7 @@ width: auto;
 }
 #cookiess {
 	border: none;
-	visibility: hidden;
-	display:block;
+	display:none;
 	position: absolute;
 	cursor: pointer;
 	outline: none;
@@ -463,7 +462,7 @@ width: auto;
 }
 
 #command {
-	visibility: hidden;
+	display: none;
 	width: 100%;
 	height: 60%;
 	margin: auto;
@@ -497,8 +496,7 @@ width: auto;
 }
 #cookiess {
 	border: none;
-	visibility: hidden;
-	display:grid;
+	display:none;
 	position: fixed;
 	cursor: pointer;
 	outline: none;

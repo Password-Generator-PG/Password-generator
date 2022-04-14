@@ -108,11 +108,11 @@ function download(filename, text) {
 const textorhtml = document.getElementById("textorhtmlid");
 	document.getElementById("btn-dow").addEventListener("click", function(event){
 		event.preventDefault();
-		if (textorhtml.style.visibility === "hidden") {
-			textorhtml.style.visibility = "visible";
+		if (textorhtml.style.display === "none") {
+			textorhtml.style.display = "block";
 			event.preventDefault();
 		} else {
-			textorhtml.style.visibility = "hidden";
+			textorhtml.style.display = "none";
 			event.preventDefault();
 		}
 	});
@@ -127,7 +127,7 @@ document.getElementById("dowhtml").addEventListener("click", function(){
     const filename = Math.floor(Math.random() * 1000000000) + 1 + "-PG" + ".html";
 
     download(filename, text);
-		textorhtml.style.visibility = "hidden";
+		textorhtml.style.display = "none";
 }});
 document.getElementById("dowtxt").addEventListener("click", function(){
 	if (resultEl.innerText == "") {
@@ -138,7 +138,7 @@ document.getElementById("dowtxt").addEventListener("click", function(){
     const filename = Math.floor(Math.random() * 1000000000) + 1 + "-PG" + ".txt";
 
     download(filename, text);
-		textorhtml.style.visibility = "hidden";
+		textorhtml.style.display = "none";
 }}, false);
 let deferredPrompt;
 
@@ -173,13 +173,11 @@ window.addEventListener('appinstalled', () => {
 
 //cookies
 const cookies1 = document.getElementById('cookiess');
-if (localStorage.getItem('cookie-terms') == "okay") {
-
-}else {
-cookies1.style.visibility = "visible";
+if (localStorage.getItem('cookie-terms') != "okay"){
+cookies1.style.display = "block";
 function click26(){
   	localStorage.setItem('cookie-terms', 'okay');
-					cookies1.style.visibility = "hidden";
+					cookies1.style.display = "none";
 
 		Notification.requestPermission().then(function(permission) { console.log('permiss', permission)});
 
@@ -200,6 +198,7 @@ comm.addEventListener("keyup", function(event) {
 function comclick(){
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg test") {
 		alert("Working!");
+		console.warn("Working!");
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "help") {
 		gax.innerHTML =  "<br>" + "PG:/Current commands (every command starts with '-pg '):" + "<br>" + "reload (forces the page to reload)" +"<br>" + "reset (resets page completly)" +"<br>" + "test (does a test to see the functionallity of the page)" +"<br>" + "generate (generates a password)" +"<br>" + "copy (copies the password)" +"<br>" + "download (downloads the password)" +"<br>" + "close (closes the command popup)" + "<br>" + "$advanced (loads advanced page)" + "<br>" + "$support (loads support page)" + "<br>" + "$about (loads about page)" + "<br>" + "$donate (loads donation page)" + "<br>" + "remove-background (--save/--delete) (removes background image)" + "<br>" + "link (get current url)" + "<br>" + "background-problem (--save/--delete) (fixes background problems such as lightmode on browsers with forced dark mode)" + "<br>" + "lite (--save) (opens the lite version for people with bad connection or problems)" + "<br>" + "hideCookie (Hides cookie popup without saving)" + "<br>"  + gax.innerHTML;
@@ -213,22 +212,11 @@ function comclick(){
 		localStorage.removeItem('backgroundProblem');
 		localStorage.removeItem('removeBackground');
 		localStorage.removeItem('version');
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.getRegistrations().then(function(registrations) {
-
-for(let registration of registrations) {
-
-	 registration.unregister()
-
-}});
-          caches.keys().then(cacheNames => {
-            cacheNames.forEach(cacheName => {
-              caches.delete(cacheName);
-            });
-          }).then(() => {
-            navigator.serviceWorker.register('sw.js');
-          })
-        };
+		window.location.reload();
+	};
+	if (document.getElementById("command-inp").value.toLowerCase() == "-pg upgrade") {
+		gax.innerHTML = "<br>" + "PG:/Update Starting..." + gax.innerHTML;
+		localStorage.removeItem('version');
 		window.location.reload();
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg reload") {
@@ -346,10 +334,10 @@ localStorage.setItem('lite', 'no');
 
 //Console
 function bottom1(){
-	if (document.getElementById("command").style.visibility == "visible") {
-				document.getElementById("command").style.visibility = "hidden";
+	if (document.getElementById("command").style.display == "block") {
+				document.getElementById("command").style.display = "none";
 	} else {
-		document.getElementById("command").style.visibility = "visible";
+		document.getElementById("command").style.display = "block";
 		document.getElementById("command-inp").select();
 	}
 };

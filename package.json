@@ -73,16 +73,16 @@
 },
 "screenshots": [
   {
-    "src": "./screenshots/screenshot_1.jpeg",
-    "sizes": "1080x2170",
-    "type": "image/webp",
+    "src": "./screenshots/s_0.png",
+    "sizes": "1439x2881",
+    "type": "image/png",
     "platform": "narrow",
     "label": "Homescreen of PG"
   },
   {
-    "src": "./screenshots/screenshot_2.jpeg",
-    "sizes": "1080x2170",
-    "type": "image/webp",
+    "src": "./screenshots/s_1.png",
+    "sizes": "1439x2881",
+    "type": "image/png",
     "platform": "narrow",
     "label": "Advanced page of PG"
   }

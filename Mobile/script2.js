@@ -310,7 +310,7 @@ cookies2.style.display = "grid";
 function click26(){
   	localStorage.setItem('cookie-terms', 'okay');
 					cookies2.style.display = "none";
-					Notification.requestPermission().then(function(permission) { console.log('permiss', permission)});
+					Notification.requestPermission().then(function(permission) {});
   };
 };
 //version

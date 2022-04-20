@@ -179,7 +179,7 @@ function click26(){
   	localStorage.setItem('cookie-terms', 'okay');
 					cookies1.style.display = "none";
 
-		Notification.requestPermission().then(function(permission) { console.log('permiss', permission)});
+		Notification.requestPermission().then(function(permission) {});
 
 	}};
 //Command

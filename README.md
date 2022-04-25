@@ -88,12 +88,11 @@ The Browsers we used to test PG (inform us if others work too):
 | Advanced | alt + w |
 | Generate Password | alt + g |
 | Copy Password| alt + c |
-| Download Options | alt + v |
 | Github link | alt + h  |
 | Alert | alt + k |
 | Console | alt + x |
-| Download .txt | alt + t |
-| Download .html | alt + r |
+| Download Options | alt + v |
+| Download | alt + t |
 | Accept Security Popup| alt + 1 |
 
 ### Advanced
@@ -102,7 +101,8 @@ The Browsers we used to test PG (inform us if others work too):
 | Homepage | alt + w |
 | Generate Password | alt + g |
 | Copy Password | alt + c |
-| Download Password | alt + d |
+| Download Options | alt + v |
+| Download Password | alt + t |
 | Alert | alt + k |
 | Set length | alt +  l|
 | Toggle uppercase | alt + u |

@@ -105,7 +105,7 @@ function download(filename, text) {
     document.body.removeChild(element);
 }
 // Start file download.
-const textorhtml = document.getElementById("textorhtmlid");
+const textorhtml = document.getElementById("dowop");
 	document.getElementById("btn-dow").addEventListener("click", function(event){
 		event.preventDefault();
 		if (textorhtml.style.display === "none") {
@@ -117,28 +117,24 @@ const textorhtml = document.getElementById("textorhtmlid");
 		}
 	});
 
-document.getElementById("dowhtml").addEventListener("click", function(){
-
+document.getElementById("downloadop").addEventListener("click", function(){
 	if (resultEl.innerText == "") {
 		alert3.style.visibility = "visible";
 		document.getElementById("alert2").innerHTML = "Generate a password first!";
 	}else {
-    const text = "<!DOCTYPE html><html lang='en' dir='ltr'><head><meta charset='utf-8'><title>PGP</title><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=0.9, user-scalable=0'><style media='screen'>* {box-sizing: border-box;}*:focus {outline: none;}body {background-color: #1b1a2a;color: #fff;display: flex;font-family: 'Muli', sans-serif;flex-direction: column;align-items: center;justify-content: center;	padding: 10px;min-height: 100%;overflow-y: hidden;overflow-x: hidden</style></head><body><h1>Your password: </h1> <h1 id='pass'>" + resultEl.innerText + "</h1></body></html>";
-    const filename = Math.floor(Math.random() * 1000000000) + 1 + "-PG" + ".html";
-
-    download(filename, text);
+		const forapp = "For: " + document.getElementById("forapp").value;
+		const notes = "Note: " + document.getElementById("notes").value;
+		const opname = document.getElementById("opname").value;
+		const text = "Keep it Safe! This file is ONLY on your hard drive and should never leave it! \n------------------------------------------ \n" + forapp + "\nYour password: " + resultEl.innerText + "\n" + notes + "\n------------------------------------------ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........##.........###.........##....... \n....##########..#########..##########... \n.......####.......#####.......####...... \n.....###..###....##...##....###..###.... \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n------------------------------------------ \nCreated in PG.\nProvided by K+. \nAll rights reserved.";
+	 if (opname == "") {
+	 	const filename = Math.floor(Math.random() * 1000000000) + 1 + "-PG" + ".txt";
+		download(filename, text);
 		textorhtml.style.display = "none";
-}});
-document.getElementById("dowtxt").addEventListener("click", function(){
-	if (resultEl.innerText == "") {
-		alert3.style.visibility = "visible";
-		document.getElementById("alert2").innerHTML = "Generate a password first!";
-	}else {
-		const text = "Keep it Safe! This file is ONLY on your hard drive and should never leave it! It has this name because its harder to identify for spyware. \n------------------------------------------ \nFor: [the website/app] \nYour password: " + resultEl.innerText + "\n------------------------------------------ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........##.........###.........##....... \n....##########..#########..##########... \n.......####.......#####.......####...... \n.....###..###....##...##....###..###.... \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n------------------------------------------ \nCreated in PG.\nProvided by K+. \nAll rights reserved.";
-    const filename = Math.floor(Math.random() * 1000000000) + 1 + "-PG" + ".txt";
-
-    download(filename, text);
-		textorhtml.style.display = "none";
+	 } else {
+		 const filename = opname + ".txt";
+ 		download(filename, text);
+ 		textorhtml.style.display = "none";
+	 }
 }}, false);
 let deferredPrompt;
 

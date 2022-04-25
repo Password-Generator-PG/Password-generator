@@ -568,25 +568,25 @@ width: auto;
 	margin-left: 10px;
 	z-index: 5;
 }
-.textorhtml {
+/* Download options */
+.dowop {
 	border: none;
 	display: none;
-	place-items: center;
 	position: absolute;
 	outline: none;
 	overflow: hidden;
 	color:  #32E56F;
 	font-weight: 700;
 	font-size: 20px;
-	background-color: rgb(31, 28, 75, 0.27);
+	background-color: rgb(31, 28, 75, 0.57);
 		backdrop-filter: blur(2rem);
 	border-radius: 15px;
-	align-items: center;
-	padding: 8px 12px;
+	/*padding: 8px 12px; */
+	padding-bottom: 10px;
 	margin: auto;
 	margin-top: 25%;
 z-index: 10;
-	width: auto;
+	width: 400px;
 	height: auto;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-user-select: none;
@@ -594,22 +594,38 @@ z-index: 10;
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+		align-items: center;
 }
-.htmlf {
-	float: right;
-	text-align: center;
-vertical-align: middle;
-line-height: 50px;       /* The same as your div height */
-margin-left: 10px;
+.dowop h1 {
+	transition: 0;
+	animation: 0;
 }
-.txtf {
-	float: left;
-	text-align: center;
-vertical-align: middle;
-line-height: 50px;       /* The same as your div height */
+.dowop h3 {
+	margin-left: 10px;
+	margin-right: 5px;
 }
-#dowtxt {
-	border: none;
+.dowop input {
+	display:grid;
+	width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+	border-radius: 25px;
+	text-align: left;
+    outline-width: 0;
+		background-color: rgba(0, 0, 0, 0.4);
+		border-width: 0;
+		color: #fff;
+		transition: 1s;
+}
+.inputdow {
+	margin: 0 auto;
+	display: table;
+}
+.btn-btn-dow {
+  border: none;
   display: block;
   text-align: center;
   cursor: pointer;
@@ -620,68 +636,26 @@ line-height: 50px;       /* The same as your div height */
   color: #fff;
   font-weight: 700;
   font-size: 15px;
-  background-color: #083d2f;
+  background-color: rgba(0,0,0,0.4);
   padding: 8px 12px;
-  margin-left: 10px;
   border-radius: 25px;
 	z-index: 1;
 	transition: 1s;
 }
-#dowhtml {
-	border: none;
-  display: block;
-  text-align: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  outline: none;
-  overflow: hidden;
+
+
+
+.btn-btn-dow span {
   position: relative;
-  color: #fff;
-  font-weight: 700;
-  font-size: 15px;
-  background-color: #083d2f;
-  padding: 8px 12px;
-  margin-left: 10px;
-  border-radius: 25px;
-	z-index: 1;
-}
-.icontxt {
-	width: 250px;
-	height: 250px;
-	text-align: center;
-vertical-align: middle;
-line-height: 250px;       /* The same as your div height */
-	background-color: rgb(31, 28, 75, 0.70);
-		backdrop-filter: blur(2rem);
-		border-radius: 25px;
-		margin-bottom: 20px;
-}
-.icontxt h3 {
-	font-size: 50px;
-}
-.iconhtml {
-	width: 250px;
-	height: 250px;
-	text-align: center;
-vertical-align: middle;
-line-height: 250px;       /* The same as your div height */
-	background-color: rgb(31, 28, 75, 0.70);
-		backdrop-filter: blur(2rem);
-		border-radius: 25px;
-		margin-bottom: 20px;
-}
-.iconhtml h3 {
-	font-size: 50px;
+  z-index: 1;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
-
-
-#dowtxt span {
-  position: relative;
-  z-index: 5;
-}
-
-#dowtxt:after {
+.btn-btn-dow:after {
   content: "";
   position: absolute;
   left: 0;
@@ -695,47 +669,19 @@ line-height: 250px;       /* The same as your div height */
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
 
-#dowtxt:hover:after {
+.btn-btn-dow:hover:after {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
-
-
-#dowtxt:hover {
+.dowop input:hover {
 	transform: translateY(2px);
 }
 
-
-#dowhtml span {
-  position: relative;
-  z-index: 5;
-}
-
-#dowhtml:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 330%;
-  width: 140%;
-  background: #04AA6D;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all 1s ease-in-out .1s;
-  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
-}
-
-#dowhtml:hover:after {
-  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
-}
-
-
-
-#dowtxt:hover {
+.btn-btn-dow:hover {
 	transform: translateY(2px);
 }
+/* END OF DOWNLOAD */
 #githublink {
 	display: flex;
 	width: auto;

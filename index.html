@@ -151,24 +151,20 @@
 </div>
 
 
-<div class="textorhtml" id="textorhtmlid" style="display: none;">
-  <h1>Choose an<br>option...</h1>
-  <div class="txtf">
-    <h3>Text file</h3>
-    <div class="icontxt">
-      <h3>.txt</h3>
-    </div>
-    <button type="button" id="dowtxt" aria-label="Download as .txt" accesskey="t"><span>Download</span></button>
-  </div>
-  <div class="htmlf">
-    <h3>Html file (beta)</h3>
-    <div class="iconhtml">
-      <h3>.html</h3>
-    </div>
-    <button type="button" id="dowhtml" aria-label="Download as .html" accesskey="r">
-      <span>Download</span>
-    </button>
-  </div>
+<div class="dowop" id="dowop" style="display: none;">
+  <h1>Download</h1>
+  <div class="inputdow">
+    <p>File name (optional):</p>
+  <input type="text" id="opname" value="">
+  <p>For the website/app (optional):</p>
+  <input type="text" id="forapp" value="">
+  <p>Extra note (optional):</p>
+  <input type="text" id="notes" value="">
+  <button type="button" class="btn-btn-dow" id="downloadop">
+<span>Download</span>
+  </button>
+</div>
+
 </div>
 
 <!-- partial -->

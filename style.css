@@ -435,9 +435,10 @@ input {
 	-webkit-tap-highlight-color: transparent;
 	bottom: 10px;
 	left:auto;
+	transition: 1s;
 }
 #alert p {
-	transition: 0s;
+	transition: 1s;
 }
 #okay {
 border: none;
@@ -452,3 +453,129 @@ height: 30px;
 width: auto;
 
 }
+/* Download options */
+.dowop {
+	border: none;
+	display: none;
+	position: absolute;
+	outline: none;
+	overflow: hidden;
+	color:  #fff;
+	font-weight: 700;
+	font-size: 20px;
+	background-color: rgba(14, 102, 78, 0.7);
+backdrop-filter: blur(2rem);
+	border-radius: 15px;
+	/*padding: 8px 12px; */
+	padding-bottom: 10px;
+	margin: auto;
+	margin-top: 25%;
+z-index: 10;
+	width: 400px;
+	height: auto;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+		align-items: center;
+}
+.dowop h1 {
+	transition: 0;
+	animation: 0;
+	margin-top: 20px;
+	margin-left: 25%;
+}
+.dowop h3 {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+.dowop input {
+	display:grid;
+	width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+	border-radius: 25px;
+	text-align: left;
+    outline-width: 0;
+		background-color: rgba(0, 0, 0, 0.4);
+		border-width: 0;
+		color: #fff;
+		transition: 1s;
+}
+.inputdow {
+	margin: 0 auto;
+	display: table;
+}
+.btn-btn-dow {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: rgba(0,0,0,0.4);
+  padding: 8px 12px;
+  border-radius: 25px;
+	z-index: 1;
+	transition: 1s;
+}
+
+
+
+.btn-btn-dow span {
+  position: relative;
+  z-index: 1;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.btn-btn-dow:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 330%;
+  width: 140%;
+  background: #04AA6D;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all 1s ease-in-out .1s;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn-btn-dow:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.dowop input:hover {
+	transform: translateY(2px);
+}
+
+.btn-btn-dow:hover {
+	transform: translateY(2px);
+}
+.closeb:before {
+  content: '✕';
+}
+.closeb {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+	background: none;
+	cursor: pointer;
+}
+/* END OF DOWNLOAD */

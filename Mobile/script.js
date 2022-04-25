@@ -112,20 +112,42 @@ function download(filename, text) {
 }
 
 // Start file download.
-document.getElementById("btn-dow").addEventListener("click", function(){
+const textorhtml = document.getElementById("dowop");
+	document.getElementById("btn-dow").addEventListener("click", function(event){
+		event.preventDefault();
+		if (textorhtml.style.display === "none") {
+			textorhtml.style.display = "block";
+			event.preventDefault();
+		} else {
+			textorhtml.style.display = "none";
+			event.preventDefault();
+		}
+	});
+
+document.getElementById("downloadop").addEventListener("click", function(){
 	if (resultEl.innerText == "") {
 		alert3.style.visibility = "visible";
 		document.getElementById("alert2").innerHTML = "Generate a password first!";
 	}else {
-    // Generate download of hello.txt file with some content
-		const text = "Keep it Safe! This file is ONLY on your hard drive and should never leave it! It has this name because its harder to identify for spyware. \n------------------------------------------ \nFor: [the website/app] \nYour password: " + resultEl.innerText + "\n------------------------------------------ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........##.........###.........##....... \n....##########..#########..##########... \n.......####.......#####.......####...... \n.....###..###....##...##....###..###.... \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n------------------------------------------ \nCreated in PG.\nProvided by K+. \nAll rights reserved.";
-    const filename = Math.floor(Math.random() * 1000000000) + 1 + "-PG" + ".txt";
-
-    download(filename, text);
+		const forapp = "For: " + document.getElementById("forapp").value;
+		const notes = "Note: " + document.getElementById("notes").value;
+		const opname = document.getElementById("opname").value;
+		const text = "Keep it Safe! This file is ONLY on your hard drive and should never leave it! \n------------------------------------------ \n" + forapp + "\nYour password: " + resultEl.innerText + "\n" + notes + "\n------------------------------------------ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........##.........###.........##....... \n....##########..#########..##########... \n.......####.......#####.......####...... \n.....###..###....##...##....###..###.... \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n------------------------------------------ \nCreated in PG.\nProvided by K+. \nAll rights reserved.";
+	 if (opname == "") {
+	 	const filename = Math.floor(Math.random() * 1000000000) + 1 + "-PG" + ".txt";
+		download(filename, text);
+		textorhtml.style.display = "none";
+	 } else {
+		 const filename = opname + ".txt";
+ 		download(filename, text);
+ 		textorhtml.style.display = "none";
+	 }
 }}, false);
 let deferredPrompt;
 
-
+document.querySelector('.closeb').addEventListener('click', function() {
+  textorhtml.style.display = "none";
+});
 //alert
 const alert3 = document.getElementById('alert');
 const closebnt22 = document.getElementById("okay");
@@ -151,35 +173,7 @@ window.addEventListener('appinstalled', () => {
   // Clear the deferredPrompt so it can be garbage collected
   deferredPrompt = null;
 });
-// make the whole serviceworker process into a promise so later on we can
-// listen to it and in case new content is available a toast will be shown
-window.isUpdateAvailable = new Promise(function(resolve, reject) {
-	// lazy way of disabling service workers while developing
-	if ('serviceWorker' in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
-		// register service worker file
-		navigator.serviceWorker.register('sw.js')
-			.then(reg => {
-				reg.onupdatefound = () => {
-					const installingWorker = reg.installing;
-					installingWorker.onstatechange = () => {
-						switch (installingWorker.state) {
-							case 'installed':
-								if (navigator.serviceWorker.controller) {
-									// new update available
-									resolve(true);
-									alert("update available")
-								} else {
-									// no update available
-									resolve(false);
-								}
-								break;
-						}
-					};
-				};
-			})
-			.catch(err => console.error('[SW ERROR]', err));
-	}
-});
+
 if (localStorage.getItem('backgroundProblem') == "yes") {
 			document.body.style.backgroundImage = "url(/Mobile/background2.jpg)";
 }

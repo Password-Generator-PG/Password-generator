@@ -2,6 +2,7 @@
 /* https://fonts.googleapis.com/css?family=Muli&display=swap */
 * {
 	box-sizing: border-box;
+	touch-action: manipulation;
 }
 *:focus {
 	outline: none;

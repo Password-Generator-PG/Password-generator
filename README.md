@@ -91,7 +91,7 @@ The Browsers we used to test PG (inform us if others work too):
 | Github link | alt + h  |
 | Alert | alt + k |
 | Console | alt + x |
-| Download Options | alt + v |
+| Open Download Options | alt + v |
 | Download | alt + t |
 | Accept Security Popup| alt + 1 |
 
@@ -101,7 +101,7 @@ The Browsers we used to test PG (inform us if others work too):
 | Homepage | alt + w |
 | Generate Password | alt + g |
 | Copy Password | alt + c |
-| Download Options | alt + v |
+| Open Download Options | alt + v |
 | Download Password | alt + t |
 | Alert | alt + k |
 | Set length | alt +  l|

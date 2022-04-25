@@ -159,6 +159,7 @@ animation: start03 2s;
 }
 .btn:hover {
 	transform: translateY(2px);
+	background: #04AA6D;
 }
 .btn-btn-large{
 	border: none;
@@ -333,9 +334,9 @@ span {
 }
 #btn-dow {
 	height: 50px;
-	width: 50px;
+	width: 60px;
   border: none;
-  display: inline;
+  display: block;
   cursor: pointer;
   text-transform: uppercase;
 	text-align: center;
@@ -347,10 +348,9 @@ span {
   font-size: 15px;
   background-color: #083d2f;
   margin-left: 10px;
-  border-radius: 100%;
+  border-radius: 50px;
 	z-index: 1;
 	align-items: center;
-	padding: 8px 12px;
 	transition: 1s;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-user-select: none;
@@ -363,7 +363,7 @@ span {
 
 #btn-dow span {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 	-webkit-user-select: none;
    -khtml-user-select: none;
     -moz-user-select: none;
@@ -371,29 +371,9 @@ span {
     user-select: none;
 }
 
-#btn-dow:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 230%;
-  width: 20%;
-  background: #04AA6D;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all 1s ease-in-out .1s;
-  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
-}
-
-#btn-dow:hover:after {
-  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
-}
-
-
-
 #btn-dow:hover {
 	transform: translateY(2px);
+	  background: #04AA6D;
 }
 #alert {
 	visibility: hidden;
@@ -599,6 +579,7 @@ z-index: 10;
 .dowop h1 {
 	transition: 0;
 	animation: 0;
+	margin-top: 20px;
 }
 .dowop h3 {
 	margin-left: 10px;
@@ -680,6 +661,16 @@ z-index: 10;
 
 .btn-btn-dow:hover {
 	transform: translateY(2px);
+}
+.closeb:before {
+  content: '✕';
+}
+.closeb {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+	background: none;
+	cursor: pointer;
 }
 /* END OF DOWNLOAD */
 #githublink {

@@ -137,6 +137,9 @@ document.getElementById("downloadop").addEventListener("click", function(){
 	 }
 }}, false);
 let deferredPrompt;
+document.querySelector('.closeb').addEventListener('click', function() {
+  textorhtml.style.display = "none";
+});
 
 
 //alert

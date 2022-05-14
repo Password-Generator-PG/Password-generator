@@ -8,7 +8,7 @@
 }
 body {
 	background-color: #1b1a2a;
-	background-image: url("background1.svg");
+	background-image: url("backgroundDoM.svg");
 	color: #fff;
 	display: flex;
 	font-family: 'Muli', sans-serif;
@@ -59,7 +59,7 @@ backdrop-filter: blur(2rem);
 	border-radius: 100px;
 }
 .topnav a.icon {
-  background: #32E56F;
+  background: #1152de;
   display: block;
   position: absolute;
 	text-align: center;
@@ -77,10 +77,13 @@ backdrop-filter: blur(2rem);
 p {
 	margin: 5px 0;
 	transition: 1s;
+	font-size: 18px;
+	margin-bottom: 15px;
 }
 
 h1 {
 	transition: 1s;
+	font-size: 40px;
 }
 
 h2 {
@@ -94,9 +97,9 @@ input[type=checkbox] {
 }
 
 .container0 {
-	background-color: rgb(31, 28, 75, 0.27);
+	background-color: rgba(17,82,222,0.15);
 	margin-top: 10%;
-	padding: 20px;
+	padding: 10px;
 	padding-left: 40px;
 	width: 90%;
 	height: auto;
@@ -112,9 +115,9 @@ input[type=checkbox] {
 
 
 .container {
-	background-color: rgb(31, 28, 75, 0.27);
+	background-color: rgba(17,82,222,0.15);
 	margin-top: 10%;
-	padding: 20px;
+	padding: 10px;
 	width: 90%;
 	max-width: 100%;
 	border-radius: 25px;
@@ -128,4 +131,7 @@ input[type=checkbox] {
 	text-align: center;
 	padding-top: 0px;
   font-size: 11px;
+}
+.container p {
+	font-size: 12px;
 }

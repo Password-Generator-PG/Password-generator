@@ -6,7 +6,7 @@
 
 body {
 	background-color: #1b1a2a;
-	background-image: url("background1.svg");
+	background-image: url("backgroundDo.svg");
 	color: #fff;
 	display: flex;
 	font-family: 'Muli', sans-serif;
@@ -19,6 +19,7 @@ body {
 
 h1 {
 	transition: 1s;
+	font-size: 50px;
 }
 h1:hover {
 	transform: translateY(2px);
@@ -26,6 +27,8 @@ h1:hover {
 p {
 	margin: 5px 0;
 	transition: 1s;
+	margin-bottom: 20px;
+	font-size: 30px;
 }
 p:hover {
 	transform: translateY(2px);
@@ -57,7 +60,7 @@ ul {
 	margin-top: 10px;
 	border-radius: 15px;
 	transition: 1s;
-
+	z-index: 1;
 }
 
 ul:hover {
@@ -82,7 +85,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: rgba(17,82,222,255);
 }
 
 .float1 {
@@ -92,7 +95,7 @@ li a:hover:not(.active) {
 	width: 100%;
 }
 .container0 {
-	background-color: rgba(14, 102, 78, 0.7);
+	background-color: rgba(17,82,222,0.2);
 	margin-top: 10%;
 	padding: 20px;
 	padding-left: 40px;
@@ -113,9 +116,9 @@ li a:hover:not(.active) {
 }
 
 .container {
-	background-color: rgba(14, 102, 78, 0.7);
+	background-color: rgba(17,82,222,0.2);
 	margin-top: 10%;
-	padding: 20px;
+	padding: 10px;
 	width: 500px;
 	max-width: 100%;
 	border-radius: 25px;
@@ -129,7 +132,18 @@ li a:hover:not(.active) {
 	text-align: center;
 	padding-top: 0px;
 }
-
+.container p {
+	font-size: 20px;
+	transition: 0;
+}
+.container p:hover {
+	transition: 0;
+	transform: translateY(0px);
+}
+.container h1:hover {
+	transition: 0;
+	transform: translateY(0px);
+}
 .container:hover {
 	transform: translateY(2px);
 }

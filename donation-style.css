@@ -89,8 +89,8 @@ li a:hover:not(.active) {
 }
 
 .float1 {
-	align-items: flex;
-	justify-content: flex;
+	align-items: center;
+	justify-content: center;
 	height: 100%;
 	width: 100%;
 }
@@ -103,8 +103,7 @@ li a:hover:not(.active) {
 	height: auto;
 	max-width: 100%;
 	border-radius: 25px;
-	float: left;
-	margin-left: 10%;
+margin-left: 50vh;
 	align-items: center;
 	justify-content: center;
 	backdrop-filter: blur(2rem);
@@ -112,38 +111,5 @@ li a:hover:not(.active) {
 }
 
 .container0:hover {
-	transform: translateY(2px);
-}
-
-.container {
-	background-color: rgba(17,82,222,0.2);
-	margin-top: 10%;
-	padding: 10px;
-	width: 500px;
-	max-width: 100%;
-	border-radius: 25px;
-	float: right;
-	height: Auto;
-	margin-right: 15%;
-	backdrop-filter: blur(2rem);
-	transition: 1s;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	padding-top: 0px;
-}
-.container p {
-	font-size: 20px;
-	transition: 0;
-}
-.container p:hover {
-	transition: 0;
-	transform: translateY(0px);
-}
-.container h1:hover {
-	transition: 0;
-	transform: translateY(0px);
-}
-.container:hover {
 	transform: translateY(2px);
 }

@@ -337,6 +337,7 @@ function click26(){
 };
 //version
 //version
+if (window.matchMedia('(display-mode: standalone)').matches) {
 var updates = document.getElementById("updatecc");
 var serviceWorker;
 fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest')
@@ -387,4 +388,5 @@ setTimeout(notifytime, 15000);
 function notifytime() {
 let message = new Notification("Updated PG to version " + localStorage.getItem('version'));
 }
+};
 };

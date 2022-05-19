@@ -416,6 +416,7 @@ let message = new Notification("Updated PG to version " + localStorage.getItem('
 								caches.delete(cacheName);
 							});
 						}).then(() => {
+							let message = new Notification("Updated PG to version " + localStorage.getItem('version'));
 							window.location.reload();
 						})
 					}

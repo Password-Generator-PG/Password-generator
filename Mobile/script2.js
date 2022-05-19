@@ -390,5 +390,5 @@ let message = new Notification("Updated PG to version " + localStorage.getItem('
 }
 };
 }else {
-	document.getElementById("versioncc").value = "WEB";
+	document.getElementById("versioncc").innerHTML = "Web";
 };

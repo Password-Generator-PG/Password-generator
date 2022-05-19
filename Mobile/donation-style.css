@@ -21,6 +21,7 @@ body {
 .topnav {
 	background-color: rgb(31, 28, 75, 0.27);
 backdrop-filter: blur(2rem);
+-webkit-backdrop-filter: blur(2rem);
   overflow: hidden;
   position: relative;
   border-radius: 25px;
@@ -30,6 +31,7 @@ backdrop-filter: blur(2rem);
 transition: 0.5s;
 -webkit-tap-highlight-color: transparent;
 backdrop-filter: blur(2rem);
+-webkit-backdrop-filter: blur(2rem);
 }
 
 
@@ -110,6 +112,7 @@ input[type=checkbox] {
 	align-items: center;
 	justify-content: center;
 	backdrop-filter: blur(2rem);
+	-webkit-backdrop-filter: blur(2rem);
 	transition: 1s;
 }
 
@@ -125,6 +128,7 @@ input[type=checkbox] {
 	height: Auto;
 	margin-right: 0%;
 	backdrop-filter: blur(2rem);
+	-webkit-backdrop-filter: blur(2rem);
 	transition: 1s;
 	align-items: center;
 	justify-content: center;

@@ -61,6 +61,7 @@ ul {
   top: 0;
   width: 95%;
 	backdrop-filter: blur(2rem);
+	-webkit-backdrop-filter: blur(2rem);
 	margin-top: 10px;
 	border-radius: 15px;
 	transition: 1s;
@@ -112,6 +113,7 @@ li a:hover:not(.active) {
 	align-items: center;
 	justify-content: center;
 	backdrop-filter: blur(2rem);
+	-webkit-backdrop-filter: blur(2rem);
 	transition: 1s;
 }
 

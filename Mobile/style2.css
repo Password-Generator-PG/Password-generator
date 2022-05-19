@@ -32,6 +32,7 @@ body {
 transition: 0.5s;
 -webkit-tap-highlight-color: transparent;
 backdrop-filter: blur(2rem);
+-webkit-backdrop-filter: blur(2rem);
 }
 
 
@@ -151,6 +152,7 @@ align-items: center;
 	width: 100%;
 	border-radius: 50px;
 	backdrop-filter: blur(2rem);
+	-webkit-backdrop-filter: blur(2rem);
 	transition: 1s;
 }
 
@@ -339,6 +341,7 @@ span {
 	font-size: 15px;
 	background-color: #32E56F;
 	backdrop-filter: blur(2rem);
+	-webkit-backdrop-filter: blur(2rem);
 	border-radius: 15px;
 	z-index: 1;
 	align-items: center;
@@ -396,6 +399,7 @@ width: auto;
 	font-size: 15px;
 	background-color: rgb(31, 28, 75, 0.27);
 		backdrop-filter: blur(2rem);
+		-webkit-backdrop-filter: blur(2rem);
 	border-radius: 15px;
 	z-index: 1;
 	align-items: center;
@@ -506,6 +510,7 @@ width: auto;
 	font-size: 20px;
 	background-color: rgb(31, 28, 75, 0.27);
 		backdrop-filter: blur(2rem);
+		-webkit-backdrop-filter: blur(2rem);
 	border-radius: 15px;
 	align-items: center;
 	padding: 8px 12px;
@@ -588,6 +593,7 @@ width: auto;
 		place-items: center;
 		text-align: center;
 		backdrop-filter: blur(2rem);
+		-webkit-backdrop-filter: blur(2rem);
 		z-index: 5;
 		-webkit-user-select: none;
    -khtml-user-select: none;
@@ -676,6 +682,7 @@ width: auto;
 	font-size: 20px;
 	background-color: rgb(31, 28, 75, 0.57);
 		backdrop-filter: blur(2rem);
+		-webkit-backdrop-filter: blur(2rem);
 	border-radius: 15px;
 	/*padding: 8px 12px; */
 	padding-bottom: 10px;

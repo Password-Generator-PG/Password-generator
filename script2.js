@@ -393,4 +393,6 @@ function notifytime() {
 let message = new Notification("Updated PG to version " + localStorage.getItem('version'));
 }
 };
+}else {
+		document.getElementById("versioncc").value = "WEB";
 };

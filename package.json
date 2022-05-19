@@ -213,6 +213,7 @@
   ],
   "swDest": "sw.js",
   "swSrc": "service-worker.js",
+  "globDirectory": "./",
   "dependencies": {
     "async": "^3.2.3",
     "workbox-cli": "^6.5.3"

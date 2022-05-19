@@ -25,5 +25,5 @@ new RegExp(' https://d33wubrfki0l68.cloudfront.net/(.*)'))
     cacheName: 'cloudfront'
   });
   // Register the new route
-registerRoute(imageRoute);
+//registerRoute(imageRoute);
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);

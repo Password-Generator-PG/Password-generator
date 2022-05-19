@@ -425,3 +425,8 @@ let message = new Notification("Updated PG to version " + localStorage.getItem('
 					document.getElementById("versioncc").innerHTML = localStorage.getItem('version');
 			});
 };
+//Firefox
+if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+	alert3.style.visibility = "visible";
+ document.getElementById("alert2").innerHTML = "This Website may not be supported by firefox.";
+}

@@ -394,5 +394,37 @@ let message = new Notification("Updated PG to version " + localStorage.getItem('
 }
 };
 }else {
-		document.getElementById("versioncc").innerHTML = "Web";
+	var updates = document.getElementById("updatecc");
+	var serviceWorker;
+	fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest')
+		.then(response => response.json())
+		.then(data => {document.getElementById("versioncc").innerHTML = localStorage.getItem('version');
+		if (localStorage.getItem('version') != data.tag_name) {
+			if (localStorage.getItem('version') == null) {
+				document.getElementById("updatetov").innerHTML = data.tag_name;
+			} else {
+				document.getElementById("updatetov").innerHTML = localStorage.getItem('version') + " -> " + data.tag_name;
+			}
+			localStorage.setItem('version', data.tag_name);
+			if ('serviceWorker' in navigator) {
+
+				navigator.serviceWorker.getRegistrations().then(function(registrations) {
+
+	for(let registration of registrations) {
+
+		 registration.unregister()
+
+	}});
+						caches.keys().then(cacheNames => {
+							cacheNames.forEach(cacheName => {
+								caches.delete(cacheName);
+							});
+						}).then(() => {
+							window.location.reload();
+						})
+					}
+		} })
+		.catch(error => {
+					document.getElementById("versioncc").innerHTML = localStorage.getItem('version');
+			});
 };

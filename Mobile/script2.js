@@ -389,4 +389,10 @@ function notifytime() {
 let message = new Notification("Updated PG to version " + localStorage.getItem('version'));
 }
 };
+}else {
+	var updates = document.getElementById("updatecc");
+	var serviceWorker;
+	fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest')
+		.then(response => response.json())
+		.then(data => {document.getElementById("versioncc").innerHTML = localStorage.getItem('version') + "WEB"};
 };

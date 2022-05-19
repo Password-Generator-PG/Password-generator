@@ -65,6 +65,8 @@
 "background_color": "#1f1c4b",
 "display": "standalone",
 "orientation": "portrait",
+"swDest": "sw.js",
+"swSrc": "service-worker.js",
 "scripts": {
   "build": "webpack"
 },

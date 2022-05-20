@@ -767,3 +767,34 @@ z-index: 10;
 	background: none;
 }
 /* END OF DOWNLOAD */
+/* FIREFOX */
+#firrefox {
+	border: none;
+	display:none;
+	position: absolute;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+	color:  #32E56F;
+	font-weight: 700;
+	font-size: 20px;
+	background-color: rgb(31, 28, 75, 1);
+	border-radius: 15px;
+	z-index: 1;
+	align-items: center;
+	padding: 8px 12px;
+	margin: auto;
+	margin-top: 10px;
+	width: 80%;
+	height: auto;
+	-webkit-tap-highlight-color: transparent;
+}
+#firrefox p {
+	transition: 0s;
+	-webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* Firefox end */

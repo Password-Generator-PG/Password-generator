@@ -428,8 +428,10 @@ let message = new Notification("Updated PG to version " + localStorage.getItem('
 //Firefox
 if (localStorage.getItem('firefox') != "yes") {
 	if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
-		alert3.style.visibility = "visible";
-	 document.getElementById("alert2").innerHTML = "This Website may not be supported by firefox.";
-	 localStorage.setItem('firefox', 'yes');
+		document.getElementById("firrefox").style.display = "grid";
+		function click26(){
+		  	localStorage.setItem('firefox', 'yes');
+							document.getElementById("firrefox").style.display = "none";
+		  };
 	};
 };

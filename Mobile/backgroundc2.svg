@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="412" height="870" viewBox="0 0 412 870">
+  <defs>
+    <clipPath id="clip-Google_Pixel_4_4XL_3">
+      <rect width="412" height="870"/>
+    </clipPath>
+  </defs>
+  <g id="Google_Pixel_4_4XL_3" data-name="Google Pixel 4, 4XL – 3" clip-path="url(#clip-Google_Pixel_4_4XL_3)">
+    <rect width="412" height="870" fill="#1b1a2a"/>
+    <path id="Differenzmenge_1" data-name="Differenzmenge 1" d="M94.5,207a94.058,94.058,0,0,1-52.836-16.139A94.776,94.776,0,0,1,7.426,149.284,94.535,94.535,0,0,1,86.558,18.329,94.505,94.505,0,0,0,142.5,189c2.647,0,5.319-.111,7.942-.329A94.073,94.073,0,0,1,94.5,207Z" transform="translate(97.994 506.171)" fill="#57189e"/>
+    <g id="Gruppe_4" data-name="Gruppe 4" transform="translate(3.676 9)">
+      <path id="Rechteck_9" data-name="Rechteck 9" d="M0,0H241.67a0,0,0,0,1,0,0V14.69a0,0,0,0,1,0,0H14.69A14.69,14.69,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="matrix(0.875, 0.485, -0.485, 0.875, 105.116, 71)" fill="#57189e"/>
+      <path id="Differenzmenge_2" data-name="Differenzmenge 2" d="M71,142A71.019,71.019,0,0,1,43.364,5.58,71.018,71.018,0,0,1,98.637,136.421,70.555,70.555,0,0,1,71,142ZM71,14.2A56.8,56.8,0,1,0,127.8,71,56.865,56.865,0,0,0,71,14.2Z" transform="translate(5 65)" fill="#57189e"/>
+      <rect id="Rechteck_10" data-name="Rechteck 10" width="19" height="23" rx="3" transform="matrix(0.875, 0.485, -0.485, 0.875, 288.304, 186.349)" fill="#57189e"/>
+      <rect id="Rechteck_11" data-name="Rechteck 11" width="19" height="23" rx="3" transform="matrix(0.875, 0.485, -0.485, 0.875, 260.535, 171.685)" fill="#57189e"/>
+    </g>
+    <g id="Gruppe_3" data-name="Gruppe 3" transform="matrix(0.819, 0.574, -0.574, 0.819, 426.961, -19.788)">
+      <rect id="Rechteck_12" data-name="Rechteck 12" width="129" height="129" rx="31" transform="translate(67 306)" fill="#1f1c4b"/>
+      <text id="_" data-name="***" transform="translate(74 422)" fill="#57189e" font-size="96" font-family="ArialMT, Arial" letter-spacing="0.02em"><tspan x="0" y="0">***</tspan></text>
+    </g>
+  </g>
+</svg>

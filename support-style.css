@@ -6,7 +6,7 @@
 
 body {
 	background-color: #1b1a2a;
-	background-image: url("background1.svg");
+	background-image: url("backgroundc.svg");
 	color: #fff;
 	display: flex;
 	font-family: 'Muli', sans-serif;
@@ -88,7 +88,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #57189E;
 }
 
 .float1 {
@@ -99,7 +99,7 @@ li a:hover:not(.active) {
 	text-align: center;
 }
 .container0 {
-	background-color: rgba(14, 102, 78, 0.7);
+	background-color: rgba(123, 30, 229, 0.2);
 	margin-top: 10%;
 	padding: 20px;
 	padding-left: 0px;
@@ -122,7 +122,7 @@ li a:hover:not(.active) {
 }
 
 .container {
-	background-color: rgba(14, 102, 78, 0.7);
+	background-color: rgba(123, 30, 229, 0.2);
 	margin-top: 10%;
 	padding: 10px;
 	width: 30%;
@@ -229,7 +229,7 @@ textarea::-webkit-scrollbar-thumb {
   color: #fff;
   font-weight: 700;
   font-size: 15px;
-  background-color: #083d2f;
+  background-color: #6a22bd;
   padding: 8px 12px;
   margin-left: 10px;
 	margin-top: 10px;
@@ -250,7 +250,7 @@ textarea::-webkit-scrollbar-thumb {
   top: 0;
   height: 290%;
   width: 200%;
-  background: #04AA6D;
+  background: #57189e;
   -webkit-transition: all .5s ease-in-out;
   transition: all 1s ease-in-out .1s;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);

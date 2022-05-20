@@ -432,6 +432,7 @@ if (localStorage.getItem('firefox') != "yes") {
 		function click26(){
 		  	localStorage.setItem('firefox', 'yes');
 							document.getElementById("firrefox").style.display = "none";
+							window.reload();
 		  };
 	};
 };

@@ -3,7 +3,7 @@
   "short_name": "PG",
   "start_url": "./",
   "main": "script2.js",
-  "description": "The next-gen password generator. Local and safe. No trackers no ads. In modern looking design!",
+  "description": "The next-gen password generator. Local and safe. No trackers, no ads. In modern looking design!",
   "permissions": {
     "desktop-notification": {}
   },

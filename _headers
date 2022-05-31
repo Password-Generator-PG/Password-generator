@@ -1,4 +1,5 @@
 /*
+  Content-Security-Policy-Report-Only: default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://passwordgenerator.report-uri.com/r/d/csp/wizard
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff

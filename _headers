@@ -4,36 +4,3 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Strict-Transport-Security: max-age=31536000; includeSubDomains
-  Order Deny,Allow
-  Deny from 1.2.3.4
-  Deny 11.22.33.44
-  Deny 51.79.156.91
-  Deny 52.199.17.123
-  Deny 95.179.139.97
-  Deny 96.126.106.201
-  Deny 104.197.30.241
-  Deny 54.36.148.76
-  Deny 52.47.146.163
-  Deny 52.77.36.31
-  Deny 18.233.58.241
-  Deny 172.107.201.78
-  Deny 52.23.120.125
-  Deny 54.36.149.68
-  Deny 45.76.150.238
-  Deny 209.222.107.178
-  Deny 51.158.156.63
-  Deny 172.104.99.63
-  Deny 35.240.151.152
-  Deny 159.65.64.238
-  Deny 54.243.132.119
-  Deny 54.232.96.90
-  Deny 149.28.50.248
-  Deny 167.172.53.228
-  Deny 5.180.211.97
-  Deny 139.162.22.205
-  Deny 37.48.96.90
-  Deny 18.205.72.90
-  Deny 94.130.76.81
-  Deny 23.106.120.205
-  Deny 188.166.79.172
-  Deny 66.165.247.154

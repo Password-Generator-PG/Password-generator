@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy-Report-Only: default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://passwordgenerator.report-uri.com/r/d/csp/wizard; connect-src 'self' api.github.com; font-src d33wubrfki0l68.cloudfront.net data: fonts.gstatic.com; img-src 'self' d33wubrfki0l68.cloudfront.net; manifest-src 'self'; script-src-elem 'self' 'unsafe-inline' storage.googleapis.com; style-src-attr 'unsafe-inline'; style-src-elem d33wubrfki0l68.cloudfront.net; worker-src 'self'
+  Content-Security-Policy: default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://passwordgenerator.report-uri.com/r/d/csp/wizard; connect-src 'self' api.github.com; font-src d33wubrfki0l68.cloudfront.net data: fonts.gstatic.com; img-src 'self' d33wubrfki0l68.cloudfront.net; manifest-src 'self'; script-src-elem 'self' 'unsafe-inline' storage.googleapis.com; style-src-attr 'unsafe-inline'; style-src-elem d33wubrfki0l68.cloudfront.net; worker-src 'self'
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff

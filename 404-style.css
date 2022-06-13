@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: #1b1a2a;
+	background-color: #000;
 	color: #fff;
 	display: flex;
 	font-family: 'Muli', sans-serif;
@@ -26,11 +26,14 @@ p {
 }
 
 h1 {
-  font-size: auto;
+  font-size: 8vw;
 	text-align: center;
+	text-shadow: red -2px 0, cyan 2px 0;
 }
 
 h2 {
 	margin: 10px 0 20px;
 	text-align: center;
+	text-align: center;
+	text-shadow: red -5px 0, cyan 5px 0;
 }

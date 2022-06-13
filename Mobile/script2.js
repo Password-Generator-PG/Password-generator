@@ -290,7 +290,7 @@ function comclick(){
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg link") {
 		var linko = window.location.toString();
-	  gax.innerHTML = "<br>" + "PG:/" +linko +gax.innerHTML;
+	  gax.innerHTML = "<br>" + "PG:/" + linko + gax.innerHTML;
 	};
 	if (document.getElementById("command-inp").value.toLowerCase() == "-pg lite") {
 		window.location.href = "lite.html";
@@ -325,17 +325,8 @@ if (window.location.href.indexOf("#removelite") > -1) {
 localStorage.setItem('lite', 'no');
 }
 
-//cookiess
-const cookies2 = document.getElementById('cookiess');
-if (localStorage.getItem('cookie-terms') != "okay") {
-cookies2.style.display = "grid";
-function click26(){
-  	localStorage.setItem('cookie-terms', 'okay');
-					cookies2.style.display = "none";
-					Notification.requestPermission().then(function(permission) {});
-  };
-};
-//version
+
+
 //version
 if (window.matchMedia('(display-mode: standalone)').matches) {
 var updates = document.getElementById("updatecc");
@@ -416,7 +407,6 @@ let message = new Notification("Updated PG to version " + localStorage.getItem('
 								caches.delete(cacheName);
 							});
 						}).then(() => {
-							let message = new Notification("Updated PG to version " + localStorage.getItem('version'));
 							window.location.reload();
 						})
 					}

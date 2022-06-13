@@ -170,17 +170,7 @@ window.addEventListener('appinstalled', () => {
   deferredPrompt = null;
 });
 
-//cookies
-const cookies1 = document.getElementById('cookiess');
-if (localStorage.getItem('cookie-terms') != "okay"){
-cookies1.style.display = "block";
-function click26(){
-  	localStorage.setItem('cookie-terms', 'okay');
-					cookies1.style.display = "none";
 
-		Notification.requestPermission().then(function(permission) {});
-
-	}};
 //Command
 const comm = document.getElementById("command-inp");
 const commands = document.getElementById("command");
@@ -420,7 +410,6 @@ let message = new Notification("Updated PG to version " + localStorage.getItem('
 								caches.delete(cacheName);
 							});
 						}).then(() => {
-							let message = new Notification("Updated PG to version " + localStorage.getItem('version'));
 							window.location.reload();
 						})
 					}

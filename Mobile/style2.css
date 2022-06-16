@@ -798,3 +798,17 @@ z-index: 10;
     user-select: none;
 }
 /* Firefox end */
+/* No scripts */
+.noscripto {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100vh !important;
+	z-index: 99;
+	background-color: #000;
+	color: #fff;
+	font-size: 5px !important;
+}
+/* No scripts end */

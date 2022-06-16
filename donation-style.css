@@ -104,7 +104,7 @@ li a:hover:not(.active) {
 	height: auto;
 	max-width: 100%;
 	border-radius: 25px;
-margin-left: 50vh;
+ margin-left: 30%;
 	align-items: center;
 	justify-content: center;
 	backdrop-filter: blur(2rem);

@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'none'; form-action 'none'; frame-ancestors 'none';connect-src 'self' api.github.com; font-src d33wubrfki0l68.cloudfront.net data: fonts.gstatic.com; img-src 'self' d33wubrfki0l68.cloudfront.net data:; manifest-src 'self'; script-src-elem 'self' 'unsafe-inline' storage.googleapis.com commerce.coinbase.com www.google.com www.gstatic.com; style-src-attr 'unsafe-inline'; style-src-elem d33wubrfki0l68.cloudfront.net 'unsafe-inline' commerce.coinbase.com; worker-src 'self'; frame-src commerce.coinbase.com www.google.com; script-src-attr 'unsafe-inline'; script-src 'self'; style-src d33wubrfki0l68.cloudfront.net; report-uri https://passwordgenerator.report-uri.com/r/d/csp/wizard
+  Content-Security-Policy: default-src 'none'; form-action 'none'; frame-ancestors 'none';connect-src 'self' api.github.com; font-src d33wubrfki0l68.cloudfront.net data: fonts.gstatic.com; img-src 'self' d33wubrfki0l68.cloudfront.net data:; manifest-src 'self'; script-src-elem 'self' 'unsafe-inline' storage.googleapis.com commerce.coinbase.com www.google.com www.gstatic.com; style-src-attr 'unsafe-inline'; style-src-elem d33wubrfki0l68.cloudfront.net 'unsafe-inline' commerce.coinbase.com; worker-src 'self'; frame-src commerce.coinbase.com www.google.com; script-src-attr 'unsafe-inline'; script-src 'self'; style-src d33wubrfki0l68.cloudfront.net; report-uri https://passwordgenerator.report-uri.com/r/d/csp/enforce
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
@@ -7,3 +7,6 @@
   Cache-Control: public, max-age=604800
   Location: https://password-generator.one/
   Vary: Upgrade-Insecure-Requests
+  Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://passwordgenerator.report-uri.com/a/d/g"}],"include_subdomains":true}
+  NEL: {"report_to":"default","max_age":31536000,"include_subdomains":true}
+  Expect-CT: report-uri="https://passwordgenerator.report-uri.com/r/d/ct/enforce", enforce

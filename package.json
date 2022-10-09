@@ -70,16 +70,16 @@
   },
   "screenshots": [
     {
-      "src": "./screenshots/s_0.png",
+      "src": "./screenshots/s_0.webp",
       "sizes": "1439x2881",
-      "type": "image/png",
+      "type": "image/webp",
       "platform": "narrow",
       "label": "Homescreen of PG"
     },
     {
-      "src": "./screenshots/s_1.png",
+      "src": "./screenshots/s_1.webp",
       "sizes": "1439x2881",
-      "type": "image/png",
+      "type": "image/webp",
       "platform": "narrow",
       "label": "Advanced page of PG"
     }
@@ -213,6 +213,6 @@
   "globDirectory": "./",
   "dependencies": {
     "async": "^3.2.3",
-    "workbox-cli": "^6.5.3"
+    "workbox-cli": "^6.5.4"
   }
 }

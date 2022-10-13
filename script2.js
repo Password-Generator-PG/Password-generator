@@ -403,3 +403,13 @@ if (localStorage.getItem('firefox') != 'yes') {
     };
   };
 };
+//Edge
+if (localStorage.getItem('edge') != 'yes') {
+  if (navigator.userAgent.toLowerCase().indexOf('Edge') > - 1) {
+    document.getElementById('eddge').style.display = 'grid';
+    function click31() {
+      localStorage.setItem('edge', 'yes');
+      document.getElementById('eddge').style.display = 'none';
+    };
+  };
+};

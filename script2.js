@@ -395,7 +395,7 @@ if (window.matchMedia('(display-mode: standalone)').matches) {
 };
 //Firefox
 if (localStorage.getItem('firefox') != 'yes') {
-  if (navigator.userAgent.toLowerCase().indexOf('firefox') > - 1) {
+  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
     document.getElementById('firrefox').style.display = 'grid';
     function click30() {
       localStorage.setItem('firefox', 'yes');
@@ -405,7 +405,7 @@ if (localStorage.getItem('firefox') != 'yes') {
 };
 //Edge
 if (localStorage.getItem('edge') != 'yes') {
-  if (navigator.userAgent.toLowerCase().indexOf('Edge') > - 1) {
+  if (navigator.userAgent.toLowerCase().indexOf('Edge') > -1) {
     document.getElementById('eddge').style.display = 'grid';
     function click31() {
       localStorage.setItem('edge', 'yes');

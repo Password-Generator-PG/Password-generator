@@ -119,7 +119,7 @@ document.getElementById('downloadop').addEventListener('click', function () {
     const forapp = 'For: ' + document.getElementById('forapp').value;
     const notes = 'Note: ' + document.getElementById('notes').value;
     const opname = document.getElementById('opname').value;
-    const text = 'Keep it Safe! This file is ONLY on your hard drive and should never leave it! \n------------------------------------------ \n' + forapp + '\nYour password: ' + resultEl.innerText + '\n' + notes + '\n------------------------------------------ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........##.........###.........##....... \n....##########..#########..##########... \n.......####.......#####.......####...... \n.....###..###....##...##....###..###.... \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n------------------------------------------ \nCreated in PG.\nProvided by K+. \nAll rights reserved.';
+    const text = 'Keep it Safe! This file is ONLY on your hard drive and should never leave it! \n------------------------------------------ \n' + forapp + '\nYour password: ' + resultEl.innerText + '\n' + notes + '\n------------------------------------------ \n  _____   _____ \n |  __  \ / ____|\n | |__) | |  __ \n |  ___/| | |_ |\n | |    | |__| |\n |_|      \_____|\n                 \n------------------------------------------ \nCreated in PG.\nProvided by K+. \nAll rights reserved.';
     if (opname == '') {
       const filename = Math.floor(Math.random() * 1000000000) + 1 + '-PG' + '.txt';
       download(filename, text);
@@ -224,7 +224,7 @@ function comclick() {
   };
   if (document.getElementById('command-inp').value.toLowerCase() == '-pg download') {
     gax.innerHTML = '<br>' + 'PG:/Download started...' + gax.innerHTML;
-    const text = 'Keep it Safe! This file is ONLY on your hard drive and should never leave it! It has this name because its harder to identify for spyware. \n------------------------------------------ \nFor: [the website/app] \nYour password: ' + resultEl.innerText + '\n------------------------------------------ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........##.........###.........##....... \n....##########..#########..##########... \n.......####.......#####.......####...... \n.....###..###....##...##....###..###.... \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n........................................ \n------------------------------------------ \nCreated in PG.\nProvided by K+. \nAll rights reserved.';
+    const text = 'Keep it Safe! This file is ONLY on your hard drive and should never leave it! It has this name because its harder to identify for spyware. \n------------------------------------------ \nFor: [the website/app] \nYour password: ' + resultEl.innerText + '\n------------------------------------------ \n  _____   _____ \n |  __ \ / ____|\n | |__) | |  __ \n |  ___/| | |_ |\n | |    | |__| |\n |_|     \_____|\n                \n------------------------------------------ \nCreated in PG.\nProvided by K+. \nAll rights reserved.';
     const filename = Math.floor(Math.random() * 1000000000) + 1 + '-PG' + '.txt';
     download(filename, text);
   };
@@ -405,7 +405,7 @@ if (localStorage.getItem('firefox') != 'yes') {
 };
 //Edge
 if (localStorage.getItem('edge') != 'yes') {
-  if ((userAgent.indexOf('chrome') !== -1) && (userAgent.indexOf('edg') !== -1)) {
+  if ((navigator.userAgent.toLowerCase().indexOf('chrome') !== -1) && (navigator.userAgent.toLowerCase().indexOf('edg') !== -1)) {
     document.getElementById('eddge').style.display = 'grid';
     function click31() {
       localStorage.setItem('edge', 'yes');

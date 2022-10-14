@@ -415,13 +415,3 @@ let message = new Notification("Updated PG to version " + localStorage.getItem('
 					document.getElementById("versioncc").innerHTML = localStorage.getItem('version');
 			});
 };
-//Firefox
-if (localStorage.getItem('firefox') != "yes") {
-	if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
-		document.getElementById("firrefox").style.display = "grid";
-		function click30(){
-		  	localStorage.setItem('firefox', 'yes');
-							document.getElementById("firrefox").style.display = "none";
-		  };
-	};
-};

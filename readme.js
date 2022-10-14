@@ -1,9 +1,4 @@
 //warn
 console.warn("%cIf you find any bugs or errors please report them on GitHub.", "color: #32e56f");
 //Version
-fetch('https://api.github.com/repos/K-plus69/Password-generator/releases/latest')
-  .then(response => response.json())
-  .then(data => console.log("%cPassword Generator (PG) " + localStorage.getItem('version'), "color: #32e56f"))
-  .catch(error => {
-        console.log("%cPassword Generator (PG) " + localStorage.getItem('version'), "color: #32e56f")
-    });
+console.info("%cPassword Generator (PG)\n\n  _____   _____ \n |  __  \ / ____|\n | |__) | |  __ \n |  ___/| | |_ |\n | |    | |__| |\n |_|      \_____|\n                 " + localStorage.getItem('version') + "\n\nGithub: https://github.com/Password-Generator-PG/Password-generator", "color: #32e56f");

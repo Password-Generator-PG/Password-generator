@@ -393,6 +393,7 @@ if (window.matchMedia('(display-mode: standalone)').matches) {
     document.getElementById('versioncc').innerHTML = localStorage.getItem('version');
   });
 };
+//browser checks
 //Firefox
 if (localStorage.getItem('firefox') != 'yes') {
   if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
@@ -410,6 +411,26 @@ if (localStorage.getItem('edge') != 'yes') {
     function click31() {
       localStorage.setItem('edge', 'yes');
       document.getElementById('eddge').style.display = 'none';
+    };
+  };
+};
+//Opera
+if (localStorage.getItem('opera') != 'yes') {
+  if (navigator.userAgent.toLowerCase().indexOf('opr') > -1) {
+    document.getElementById('oppera').style.display = 'grid';
+    function click32() {
+      localStorage.setItem('opera', 'yes');
+      document.getElementById('oppera').style.display = 'none';
+    };
+  };
+};
+//Chrome
+if (localStorage.getItem('chrome') != 'yes') {
+  if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+    document.getElementById('chrrome').style.display = 'grid';
+    function click33() {
+      localStorage.setItem('chrome', 'yes');
+      document.getElementById('chrrome').style.display = 'none';
     };
   };
 };

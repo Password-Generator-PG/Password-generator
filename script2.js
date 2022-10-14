@@ -427,7 +427,7 @@ if (localStorage.getItem('opera') != 'yes') {
   };
 };
 //Chrome
-let chrometest = Boolean(window.chrome);
+/* let chrometest = Boolean(window.chrome);
 if (localStorage.getItem('chrome') != 'yes') {
   if (chrometest == true && (navigator.userAgent.toLowerCase().indexOf('chrome') > -1)) {
     document.getElementById('chrrome').style.display = 'grid';
@@ -436,4 +436,4 @@ if (localStorage.getItem('chrome') != 'yes') {
       document.getElementById('chrrome').style.display = 'none';
     };
   };
-};
+}; */

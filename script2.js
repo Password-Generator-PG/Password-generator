@@ -415,8 +415,10 @@ if (localStorage.getItem('edge') != 'yes') {
   };
 };
 //Opera
+var isChromium = window.chrome,
+    isOpera = window.navigator.userAgent.indexOf("OPR") > -1 || window.navigator.userAgent.indexOf("Opera") > -1;
 if (localStorage.getItem('opera') != 'yes') {
-  if (navigator.userAgent.toLowerCase().indexOf('opr') > -1) {
+  if (isChromium !== null && isOpera == true) {
     document.getElementById('oppera').style.display = 'grid';
     function click32() {
       localStorage.setItem('opera', 'yes');
@@ -425,8 +427,9 @@ if (localStorage.getItem('opera') != 'yes') {
   };
 };
 //Chrome
+let chrometest = Boolean(window.chrome);
 if (localStorage.getItem('chrome') != 'yes') {
-  if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+  if (chrometest == true && (navigator.userAgent.toLowerCase().indexOf('chrome') > -1)) {
     document.getElementById('chrrome').style.display = 'grid';
     function click33() {
       localStorage.setItem('chrome', 'yes');

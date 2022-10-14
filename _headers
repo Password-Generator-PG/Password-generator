@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy-Report-Only: default-src 'none'; form-action 'none'; frame-ancestors 'none';connect-src 'self' api.github.com; font-src d33wubrfki0l68.cloudfront.net data: fonts.gstatic.com; img-src 'self' d33wubrfki0l68.cloudfront.net data:; manifest-src 'self'; script-src-elem 'self' 'unsafe-inline' 'inline' storage.googleapis.com googleapis.com coinbase.com; worker-src 'self'; frame-src coinbase.com; script-src-attr 'unsafe-inline'; script-src 'inline' 'unsafe-inline' 'self'; style-src 'self' 'inline' 'unsafe-inline' d33wubrfki0l68.cloudfront.net; report-uri https://passwordgenerator.report-uri.com/r/d/csp/enforce
+  Content-Security-Policy-Report-Only: default-src 'none'; form-action 'none'; frame-ancestors 'none';connect-src 'self' api.github.com; font-src d33wubrfki0l68.cloudfront.net data: fonts.gstatic.com; img-src 'self' d33wubrfki0l68.cloudfront.net data:; manifest-src 'self';  worker-src 'self'; frame-src coinbase.com; script-src 'unsafe-inline' 'self'; style-src 'self' 'unsafe-inline' d33wubrfki0l68.cloudfront.net; report-uri https://passwordgenerator.report-uri.com/r/d/csp/enforce
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff

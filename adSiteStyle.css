@@ -1,0 +1,72 @@
+body {
+  background: rgb(0,0,0);
+background: -moz-linear-gradient(68deg, rgba(0,0,0,1) 30%, rgb(208, 10, 252) 100%);
+background: -webkit-linear-gradient(68deg, rgba(0,0,0,1) 30%, rgb(208, 10, 252) 100%);
+background: linear-gradient(68deg, rgba(0,0,0,1) 30%, rgb(208, 10, 252) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#00ff77",GradientType=1);
+color: #fff;
+font-family: arial;
+background-repeat: no-repeat;
+min-height: calc(100vh - 10px);
+padding: 0;
+padding-top: 10px;
+margin: 0;
+text-align: center;
+}
+* {
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+h1 {
+  font-size: 70px;
+  margin: 0;
+  z-index: 10;
+}
+p {
+  font-weight: 600;
+  font-size: 20px;
+  max-width: 300px;
+  margin: 15px auto;
+}
+.start {
+  z-index: 10;
+}
+.outButtons {
+  display: grid;
+  bottom: 40px;
+  position: absolute;
+  min-width: 100%;
+  z-index: 10
+}
+.buttons {
+  border-radius: 30px;
+  padding: 10px;
+  background-color: rgb(31, 28, 75, 0.57);
+		backdrop-filter: blur(2rem);
+		-webkit-backdrop-filter: blur(2rem);
+    width: auto;
+    margin: 0 auto;
+}
+.button{
+  margin-left: 45px;
+  margin-right: 45px;
+    background-color: #363379;
+    border-radius: 25px;
+    border: 2px solid #363379;
+    height: 35px;
+    width: 85px;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.button:hover{
+  background-color: #4840a0;
+  border: 2px solid #7069ff;
+}
+.ad2 {
+  margin-top: 5%;
+  z-index: -1;
+}

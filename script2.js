@@ -395,15 +395,12 @@ if (window.matchMedia('(display-mode: standalone)').matches) {
 };
 //browser checks
 //Firefox
-if (localStorage.getItem('firefox') != 'yes') {
-  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-    document.getElementById('firrefox').style.display = 'grid';
+if (localStorage.getItem('adForPGE') != 'yes') {
+    document.getElementById('adForPG-E').style.display = 'grid';
     function click30() {
-      localStorage.setItem('firefox', 'yes');
-      document.getElementById('firrefox').style.display = 'none';
-    };
-  };
-};
+      localStorage.setItem('adForPGE', 'yes');
+      document.getElementById('adForPG-E').style.display = 'none';
+    }};
 //Edge
 if (localStorage.getItem('edge') != 'yes') {
   if ((navigator.userAgent.toLowerCase().indexOf('chrome') !== -1) && (navigator.userAgent.toLowerCase().indexOf('edg') !== -1)) {

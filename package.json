@@ -63,6 +63,7 @@
   ],
   "theme_color": "#1b1a2a",
   "background_color": "#1f1c4b",
+  "display_override": ["fullscreen", "minimal-ui"],
   "display": "standalone",
   "orientation": "portrait",
   "scripts": {
@@ -211,6 +212,7 @@
   "swDest": "sw.js",
   "swSrc": "service-worker.js",
   "globDirectory": "./",
+  "categories": ["security"],
   "dependencies": {
     "async": "^3.2.3",
     "workbox-cli": "^6.5.4"
